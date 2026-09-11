@@ -1,4 +1,3 @@
-$\usepackage{amsmath} % Required for \text or \mathclap if needed$
 # Subatomic Particles
   ## Protons ($p^+$)
 - In nucleus
