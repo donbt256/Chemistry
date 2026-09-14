@@ -1,13 +1,13 @@
 # Subatomic Particles
-  ## Protons ($p^+$)
+## Protons ($p^+$)
 - In nucleus
 - Charge of +1
 - Mass of 1 amu
-  ## Neutrons ($n^0$)
+## Neutrons ($n^0$)
 - In nucleus
 - Charge of 0
 -  Mass of 1 amu
-  ## Electrons ($e^+$)
+## Electrons ($e^+$)
 - In the electron cloud around the nucleus
 - Charge of -1
 - Mass of $\frac{1}{1823} \approx 0$
