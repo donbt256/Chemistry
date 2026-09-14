@@ -12,7 +12,9 @@
 - Charge of -1
 - Mass of $\frac{1}{1823} \approx 0$
 # Atoms
-  ## Atomic number ($Z$)
+## Element symbol
+- An element symbol is a 1-2 letter abbreviation of the element’s name (not always in English)
+## Atomic number ($Z$)
 - Each element has a unique # of protons (the atomic number)
 - The same # of electrons balances this
 ## Mass number ($A$)
