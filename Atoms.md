@@ -26,7 +26,7 @@
 - If there are no stable isotopes, the mass of the isotope with the longest half-life is used.
 # Radioactive decay
 ## Alpha decay
-- In alpha decay, the "parent" (starting) isotope produces a "daughter" isotope and a helium atom.
+- In alpha decay, the "parent" (starting) isotope produces a "daughter" isotope with 2 fewer protons & 2 fewer neutrons and a helium-4 atom.
   - $\begin{array}{l} A \\ Z \end{array}\mathrm{X} \rightarrow \begin{array}{l} A-4 \\ Z-2 \end{array}\mathrm{Y} + \begin{array}{l} 4 \\ 2 \end{array}\mathrm{He}$
 ## Beta decay
 - In beta decay, the "parent" (starting) isotope produces a "daughter" isotope with one more proton, an electron, and an electron antineutrino.
