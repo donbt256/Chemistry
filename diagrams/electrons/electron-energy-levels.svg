@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:25:39.447200</dc:date>
+    <dc:date>2026-10-05T17:26:26.368857</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,27 +41,27 @@ C 357.020327 343.028884 356.256 344.862228 356.256 346.7736
 C 356.256 348.684972 357.020327 350.518316 358.380647 351.86986 
 C 359.740968 353.221404 361.586217 353.9808 363.51 353.9808 
 z
-" clip-path="url(#pcbed9d79ec)" style="fill: #b73737; stroke: #b73737; stroke-linejoin: miter"/>
+" clip-path="url(#p2b2a8d4548)" style="fill: #b73737; stroke: #b73737; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 137.52 317.9448 
 L 589.5 317.9448 
-" clip-path="url(#pcbed9d79ec)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p2b2a8d4548)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 137.52 259.7328 
 L 589.5 259.7328 
-" clip-path="url(#pcbed9d79ec)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p2b2a8d4548)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 137.52 201.5208 
 L 589.5 201.5208 
-" clip-path="url(#pcbed9d79ec)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p2b2a8d4548)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 137.52 143.3088 
 L 589.5 143.3088 
-" clip-path="url(#pcbed9d79ec)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p2b2a8d4548)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Electron energy levels -->
@@ -641,7 +641,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pcbed9d79ec">
+  <clipPath id="p2b2a8d4548">
    <rect x="3.6" y="3.6" width="669.6" height="369.7848"/>
   </clipPath>
  </defs>
