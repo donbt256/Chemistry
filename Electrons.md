@@ -23,16 +23,10 @@
 - “All models are wrong, but some are useful.” — George E. P. Box
 
 # Electron energy level (shell)
+![Electron energy levels](diagrams/electrons/electron-energy-levels.png)
+
 - Generally symbolized by $n$
 
-```
-              n = 4  ─────────────────
-              n = 3  ────────────────
-              n = 2  ────────────────
-              n = 1  ────────────────
-                         │
-                       nucleus
-```
 
 - $n$ is the principal quantum number
 - Higher $n$ values generally correspond to electrons being farther from the nucleus and having higher energy
@@ -54,21 +48,10 @@
 - An orbital can hold a maximum of 2 electrons
 
 # Electron orbitals
+![s and p orbitals](diagrams/electrons/s-and-p-orbitals.png)
+
 - An orbital is a region within an energy level where there is a probability of finding an electron
 
-```
-s orbital              p orbitals
-
-     ___                 ___       ___
-   /     \             /     \     /     \
-  |   •   |           |  •   |   |  •   |
-   \ ___ /             \ ___ /     \ ___ /
-                         px          py
-                                                                                    \
-                              •
-                              |
-                              pz
-```
 
 - Orbital shapes are commonly represented by a surface enclosing about 90% of the total electron probability
 - The s orbital has a spherical shape centered around the nucleus
@@ -87,27 +70,10 @@ s orbital              p orbitals
 | 4 | s, p, d, f | 1, 3, 5, 7 | 2, 6, 10, 14 | 32 |
 
 # Blocks on the periodic table
+![Periodic table blocks](diagrams/electrons/periodic-table-blocks.png)
+
 - Elements of the same period have the same number of electron shells
 
-```
-          PERIODIC TABLE BLOCKS
-
-   ┌─────────┐ ┌───────────────────┐
-   │ s-block  │ │      p-block      │
-   │ Groups   │ │   Groups 13–18    │
-   │   1–2    │ └───────────────────┘
-   └─────────┘
-        ┌──────────────────────────┐
-        │         d-block          │
-        │      transition metals   │
-        └──────────────────────────┘
-
-             ┌───────────────┐
-             │    f-block    │
-             │ lanthanides & │
-             │   actinides   │
-             └───────────────┘
-```
 
 - The periodic table is divided into s, p, d, and f blocks based on the sub-shell being filled
 - The s block contains Groups 1 and 2
@@ -122,36 +88,10 @@ s orbital              p orbitals
 - Orbitals higher on the diagram have greater energy
 
 # Aufbau and Madelung
+![Aufbau and Madelung filling order](diagrams/electrons/aufbau-madelung.png)
+
 - The Madelung rule gives the order in which sub-shells are arranged by increasing energy
 
-```
-Energy ↑
-
-7p  ─────────────────────
-6d  ─────────────────
-5f  ───────────────
-7s  ─────────────
-6p  ───────────
-5d  ─────────
-4f  ───────
-6s  ─────
-5p  ────
-4d  ───
-5s  ──
-4p  ──
-3d  ──
-4s  ──
-3p  ─
-3s  ─
-2p  ─
-2s  ─
-1s  ─
-
-Filling order:
-1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p
-    → 5s → 4d → 5p → 6s → 4f → 5d → 6p
-    → 7s → 5f → 6d → 7p
-```
 
 - $\ell$ is the azimuthal quantum number
 - The values $\ell=0,1,2,3$ correspond to the s, p, d, and f labels, respectively
@@ -237,17 +177,10 @@ Filling order:
 - For example, the three p orbitals are filled one at a time before electrons are paired
 
 # Electron configuration and orbital notation
+![Orbital notation](diagrams/electrons/orbital-notation.png)
+
 - Electron configurations can be represented using orbital notation
 
-```
-s sub-shell       p sub-shell          d sub-shell
-
-  ↑↓              ↑↓  ↑↓  ↑↓       ↑↓  ↑↓  ↑↓  ↑↓  ↑↓
- [──]             [──][──][──]      [──][──][──][──][──]
-
-  1 orbital          3 orbitals           5 orbitals
-  2 electrons        6 electrons          10 electrons
-```
 
 - Each orbital can contain a maximum of 2 electrons
 - Electrons occupying the same orbital must have opposite spins
@@ -309,21 +242,10 @@ s sub-shell       p sub-shell          d sub-shell
 - Elements in the same group have the same number of valence electrons and thus have similar chemical properties
 
 # Dot notations
+![Lewis dot notation](diagrams/electrons/lewis-dot-notation.png)
+
 - An atom’s valence electrons can be represented by Lewis dot notations
 
-```
-1 e⁻       2 e⁻       3 e⁻       4 e⁻
-
-  X          •X•        •X•        •X•
-             •           •          •
-                                  (one on each side)
-
-5 e⁻       6 e⁻       7 e⁻       8 e⁻
-
- •X•        •X•        •X•        •X•
-  •          ••         ••         ••
-             •          •          ••
-```
 
 - Electrons are placed singly around the symbol before pairing them
 
@@ -332,17 +254,10 @@ s sub-shell       p sub-shell          d sub-shell
 - Electrons are placed singly around the symbol before pairing them
 
 # Dot notations – Period 2
+![Period 2 Lewis dot notation](diagrams/electrons/period-2-lewis-dots.png)
+
 - Lewis dot notations can be used to represent the valence electrons of the elements of Period 2
 
-```
-Li•    •Be•    •B•     •C•
-                 •       •
-                         •
-
- •N•    •O•    •F•    •Ne•
-  ••     ••     ••     ••
-  •      ••     ••     ••
-```
 
 - Lithium has 1 valence electron
 - Beryllium has 2 valence electrons
@@ -395,21 +310,10 @@ Li•    •Be•    •B•     •C•
 - Electron diffraction experiments provide evidence for the wave nature of matter
 
 # Electromagnetic radiation
+![Electromagnetic wave](diagrams/electrons/electromagnetic-wave.png)
+
 - Electromagnetic radiation propagates through space as a wave moving at the speed of light in a vacuum
 
-```
-amplitude
-   ↑
-   │       /\        /\
-   │      /  \      /  \
-───┼─────/────\────/────\────→
-   │    /      \  /      \
-   │   /        \/        \
-   │
-   └──────────────────────────→ distance
-
-          ← wavelength →
-```
 
 - A wave has a wavelength, frequency, and amplitude
 - Amplitude describes the size of the wave
@@ -444,17 +348,11 @@ amplitude
 - For a photon, energy can also be written as $E=\frac{hc}{\lambda}$
 
 # What it means
+![Wavelength and frequency](diagrams/electrons/wavelength-frequency.png)
+
 - Short wavelength = high frequency = high energy
 - Long wavelength = low frequency = low energy
 
-```
-SHORT λ                         LONG λ
-high ν                          low ν
-high E                          low E
-
-/\/\/\/\/\/\/\/\/\             /\        /\        /\
-                             /  \      /  \      /  \
-```
 
 - Long wavelength = low frequency = low energy
 - Frequency is the number of cycles per second
@@ -477,17 +375,10 @@ high E                          low E
 - Schrödinger, Heisenberg, and Pauli are associated with quantum mechanics
 
 # Quanta and electron transitions
+![Electron transitions](diagrams/electrons/electron-transitions.png)
+
 - Definite amounts of energy are quanta
 
-```
-Higher energy   ───────────────  excited state
-                       ↑
-                       │ absorb photon
-                       │
-Lower energy    ───────────────  ground state
-                       ↓
-                       │ emit photon
-```
 
 - Electron transitions involve jumps between allowed energy states
 - When an electron moves to a higher energy state, it absorbs energy
@@ -497,22 +388,10 @@ Lower energy    ───────────────  ground state
   - $\Delta E=h\nu$
 
 # Emission spectra
+![Hydrogen emission spectrum](diagrams/electrons/hydrogen-emission-spectrum.png)
+
 - Electron transitions produce light with definite wavelengths
 
-```
-Hydrogen emission spectrum
-
-UV              Visible                          IR
-│                 │                              │
-│     | |         |  | |      |                 │
-└─────┴─┴─────────┴──┴─┴──────┴─────────────────┘
-      Lyman       Balmer                         Paschen
-
-Balmer lines:
-~410 nm   ~434 nm   ~486 nm   ~656 nm
-   |         |         |         |
-   |         |         |         |
-```
 
 - The lowest possible energy is the ground state
 - The Hydrogen Balmer series contains visible lines at approximately 410 nm, 434 nm, 486 nm, and 656 nm
@@ -540,20 +419,10 @@ Balmer lines:
   - Copper
 
 # Absorption spectra
+![Absorption spectrum](diagrams/electrons/absorption-spectrum.png)
+
 - Absorption spectra exist too
 
-```
-Continuous spectrum:
-
-████████████████████████████████████████
-
-Absorption spectrum:
-
-███████ ███████████ █████ ███████████████
-       ↑            ↑
-   absorbed      absorbed
-   wavelength    wavelength
-```
 
 - When light passes through matter, specific wavelengths can be absorbed
 - Absorption spectroscopy can be used to identify and analyze substances
