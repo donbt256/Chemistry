@@ -27,11 +27,34 @@ ax.add_patch(Circle((6.45,.48),.13,color="#b73737")); label(ax,6.45,.12,r"$\math
 save(fig,"electron-energy-levels.svg")
 
 fig,ax=figure(r"$s$ and $p$ orbitals")
-ax.add_patch(Circle((2.1,3.15),1.15,facecolor="#78aee8",alpha=.65,edgecolor="#315f9a",lw=2)); label(ax,2.1,1.25,r"$s$",20)
-for x,orient,name in [(6,"h",r"$p_x$"),(8.5,"v",r"$p_y$"),(11,"v",r"$p_z$")]:
-    if orient=="h": ax.add_patch(Ellipse((x,3.15),2.5,.75,facecolor="#79b37f",alpha=.65,edgecolor="#3c7b42",lw=2))
-    else: ax.add_patch(Ellipse((x,3.15),.8,2.5,facecolor="#79b37f",alpha=.65,edgecolor="#3c7b42",lw=2))
-    ax.add_patch(Circle((x,3.15),.07,color="#222222")); label(ax,x,1.25,name,20)
+# s orbital: spherical electron-density region centered on the nucleus.
+ax.add_patch(Circle((1.9,3.2),1.18,facecolor="#78aee8",alpha=.55,edgecolor="#315f9a",lw=2))
+ax.add_patch(Circle((1.9,3.2),.07,color="#222222"))
+label(ax,1.9,1.45,r"$s$",20)
+label(ax,1.9,5.0,r"$\text{spherical}$",12)
+
+# p orbitals: each is a two-lobed dumbbell with a node at the nucleus.
+# The three panels show the mutually perpendicular x, y, and z orientations.
+p_specs=[
+    (5.0,r"$p_x$","x"),
+    (7.8,r"$p_y$","y"),
+    (10.6,r"$p_z$","z"),
+]
+for x,name,orient in p_specs:
+    if orient=="x":
+        ax.add_patch(Ellipse((x-.55,3.2),1.55,.9,facecolor="#78aee8",alpha=.55,edgecolor="#315f9a",lw=2))
+        ax.add_patch(Ellipse((x+.55,3.2),1.55,.9,facecolor="#79b37f",alpha=.55,edgecolor="#3c7b42",lw=2))
+    elif orient=="y":
+        ax.add_patch(Ellipse((x,3.2-.55),.9,1.55,facecolor="#78aee8",alpha=.55,edgecolor="#315f9a",lw=2))
+        ax.add_patch(Ellipse((x,3.2+.55),.9,1.55,facecolor="#79b37f",alpha=.55,edgecolor="#3c7b42",lw=2))
+    else:
+        # Perspective view of the z-oriented dumbbell: the lobes are tilted
+        # toward and away from the viewer rather than incorrectly repeating p_y.
+        ax.add_patch(Ellipse((x-.45,3.2),1.45,.78,angle=35,facecolor="#78aee8",alpha=.55,edgecolor="#315f9a",lw=2))
+        ax.add_patch(Ellipse((x+.45,3.2),1.45,.78,angle=35,facecolor="#79b37f",alpha=.55,edgecolor="#3c7b42",lw=2))
+    ax.add_patch(Circle((x,3.2),.07,color="#222222"))
+    label(ax,x,1.45,name,20)
+label(ax,6.25,.55,r"$\text{Each }p\text{ orbital has two lobes separated by a nodal plane.}$",12)
 save(fig,"s-and-p-orbitals.svg")
 
 fig,ax=figure(r"Periodic table blocks")
