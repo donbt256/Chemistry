@@ -23,7 +23,7 @@
 - “All models are wrong, but some are useful.” — George E. P. Box
 
 # Electron energy level (shell)
-![Electron energy levels](diagrams/electrons/electron-energy-levels.png)
+![Electron energy levels](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/electron-energy-levels.png)
 
 - Generally symbolized by $n$
 
@@ -48,7 +48,7 @@
 - An orbital can hold a maximum of 2 electrons
 
 # Electron orbitals
-![s and p orbitals](diagrams/electrons/s-and-p-orbitals.png)
+![s and p orbitals](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/s-and-p-orbitals.png)
 
 - An orbital is a region within an energy level where there is a probability of finding an electron
 
@@ -70,7 +70,7 @@
 | 4 | s, p, d, f | 1, 3, 5, 7 | 2, 6, 10, 14 | 32 |
 
 # Blocks on the periodic table
-![Periodic table blocks](diagrams/electrons/periodic-table-blocks.png)
+![Periodic table blocks](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/periodic-table-blocks.png)
 
 - Elements of the same period have the same number of electron shells
 
@@ -88,7 +88,7 @@
 - Orbitals higher on the diagram have greater energy
 
 # Aufbau and Madelung
-![Aufbau and Madelung filling order](diagrams/electrons/aufbau-madelung.png)
+![Aufbau and Madelung filling order](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/aufbau-madelung.png)
 
 - The Madelung rule gives the order in which sub-shells are arranged by increasing energy
 
@@ -177,7 +177,7 @@
 - For example, the three p orbitals are filled one at a time before electrons are paired
 
 # Electron configuration and orbital notation
-![Orbital notation](diagrams/electrons/orbital-notation.png)
+![Orbital notation](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/orbital-notation.png)
 
 - Electron configurations can be represented using orbital notation
 
@@ -242,7 +242,7 @@
 - Elements in the same group have the same number of valence electrons and thus have similar chemical properties
 
 # Dot notations
-![Lewis dot notation](diagrams/electrons/lewis-dot-notation.png)
+![Lewis dot notation](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/lewis-dot-notation.png)
 
 - An atom’s valence electrons can be represented by Lewis dot notations
 
@@ -254,7 +254,7 @@
 - Electrons are placed singly around the symbol before pairing them
 
 # Dot notations – Period 2
-![Period 2 Lewis dot notation](diagrams/electrons/period-2-lewis-dots.png)
+![Period 2 Lewis dot notation](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/period-2-lewis-dots.png)
 
 - Lewis dot notations can be used to represent the valence electrons of the elements of Period 2
 
@@ -310,7 +310,7 @@
 - Electron diffraction experiments provide evidence for the wave nature of matter
 
 # Electromagnetic radiation
-![Electromagnetic wave](diagrams/electrons/electromagnetic-wave.png)
+![Electromagnetic wave](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/electromagnetic-wave.png)
 
 - Electromagnetic radiation propagates through space as a wave moving at the speed of light in a vacuum
 
@@ -348,7 +348,7 @@
 - For a photon, energy can also be written as $E=\frac{hc}{\lambda}$
 
 # What it means
-![Wavelength and frequency](diagrams/electrons/wavelength-frequency.png)
+![Wavelength and frequency](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/wavelength-frequency.png)
 
 - Short wavelength = high frequency = high energy
 - Long wavelength = low frequency = low energy
@@ -375,7 +375,7 @@
 - Schrödinger, Heisenberg, and Pauli are associated with quantum mechanics
 
 # Quanta and electron transitions
-![Electron transitions](diagrams/electrons/electron-transitions.png)
+![Electron transitions](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/electron-transitions.png)
 
 - Definite amounts of energy are quanta
 
@@ -388,7 +388,7 @@
   - $\Delta E=h\nu$
 
 # Emission spectra
-![Hydrogen emission spectrum](diagrams/electrons/hydrogen-emission-spectrum.png)
+![Hydrogen emission spectrum](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/hydrogen-emission-spectrum.png)
 
 - Electron transitions produce light with definite wavelengths
 
@@ -419,7 +419,7 @@
   - Copper
 
 # Absorption spectra
-![Absorption spectrum](diagrams/electrons/absorption-spectrum.png)
+![Absorption spectrum](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/absorption-spectrum.png)
 
 - Absorption spectra exist too
 
