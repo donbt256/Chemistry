@@ -7,7 +7,7 @@ from matplotlib.patches import Circle, Rectangle, FancyArrowPatch, Ellipse
 import numpy as np
 
 OUT=Path("diagrams/electrons"); OUT.mkdir(parents=True,exist_ok=True)
-TEXT_COLOR="#123456"
+TEXT_COLOR="#888888"
 
 def figure(title):
     fig,ax=plt.subplots(figsize=(12,6.67)); fig.patch.set_alpha(0)
@@ -19,7 +19,6 @@ def label(ax,x,y,s,size=14,**kw):
     ax.text(x,y,s,fontsize=size,**kw)
 def save(fig,name):
     p=OUT/name; fig.savefig(p,format="svg",transparent=True,bbox_inches="tight",pad_inches=.05); plt.close(fig)
-    d=p.read_text(encoding="utf-8").replace(TEXT_COLOR,"currentColor"); p.write_text(d,encoding="utf-8")
 
 fig,ax=figure(r"Electron energy levels")
 for i,n in enumerate([1,2,3,4]):
@@ -44,7 +43,7 @@ for r in range(6):
     for c in range(6): ax.add_patch(Rectangle((7+c*.38,1.25+r*.38),.38,.38,fill=False,edgecolor="#4f9c58",lw=1.5))
 for r in range(2):
     for c in range(14): ax.add_patch(Rectangle((4.1+c*.38,.35+r*.38),.38,.38,fill=False,edgecolor="#8057ad",lw=1.5))
-label(ax,1.1,4.15,r"$s$-block",17,color="#c04a4a"); label(ax,4.7,4.15,r"$d$-block",17,color="#3d70bd"); label(ax,8,4.15,r"$p$-block",17,color="#4f9c58"); label(ax,6.75,.05,r"$f$-block",17,color="#8057ad")
+label(ax,1.1,4.15,r"$s$-block",17); label(ax,4.7,4.15,r"$d$-block",17); label(ax,8,4.15,r"$p$-block",17); label(ax,6.75,.05,r"$f$-block",17)
 label(ax,9.9,2.95,r"$s$: Groups 1--2",12,ha="left"); label(ax,9.9,2.45,r"$p$: Groups 13--18",12,ha="left"); label(ax,9.9,1.95,r"$d$: transition metals",12,ha="left"); label(ax,9.9,1.45,r"$f$: lanthanides + actinides",12,ha="left")
 save(fig,"periodic-table-blocks.svg")
 
