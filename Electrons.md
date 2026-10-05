@@ -24,6 +24,16 @@
 
 # Electron energy level (shell)
 - Generally symbolized by $n$
+
+```
+              n = 4  ─────────────────
+              n = 3  ────────────────
+              n = 2  ────────────────
+              n = 1  ────────────────
+                         │
+                       nucleus
+```
+
 - $n$ is the principal quantum number
 - Higher $n$ values generally correspond to electrons being farther from the nucleus and having higher energy
 - The number of electrons that can fit in a shell is $2n^2$
@@ -45,6 +55,21 @@
 
 # Electron orbitals
 - An orbital is a region within an energy level where there is a probability of finding an electron
+
+```
+s orbital              p orbitals
+
+     ___                 ___       ___
+   /     \             /     \     /     \
+  |   •   |           |  •   |   |  •   |
+   \ ___ /             \ ___ /     \ ___ /
+                         px          py
+                                                                                    \
+                              •
+                              |
+                              pz
+```
+
 - Orbital shapes are commonly represented by a surface enclosing about 90% of the total electron probability
 - The s orbital has a spherical shape centered around the nucleus
 - There are three dumbbell-shaped p orbitals, labeled $p_x$, $p_y$, and $p_z$
@@ -63,6 +88,27 @@
 
 # Blocks on the periodic table
 - Elements of the same period have the same number of electron shells
+
+```
+          PERIODIC TABLE BLOCKS
+
+   ┌─────────┐ ┌───────────────────┐
+   │ s-block  │ │      p-block      │
+   │ Groups   │ │   Groups 13–18    │
+   │   1–2    │ └───────────────────┘
+   └─────────┘
+        ┌──────────────────────────┐
+        │         d-block          │
+        │      transition metals   │
+        └──────────────────────────┘
+
+             ┌───────────────┐
+             │    f-block    │
+             │ lanthanides & │
+             │   actinides   │
+             └───────────────┘
+```
+
 - The periodic table is divided into s, p, d, and f blocks based on the sub-shell being filled
 - The s block contains Groups 1 and 2
 - The p block contains Groups 13 through 18
@@ -77,6 +123,36 @@
 
 # Aufbau and Madelung
 - The Madelung rule gives the order in which sub-shells are arranged by increasing energy
+
+```
+Energy ↑
+
+7p  ─────────────────────
+6d  ─────────────────
+5f  ───────────────
+7s  ─────────────
+6p  ───────────
+5d  ─────────
+4f  ───────
+6s  ─────
+5p  ────
+4d  ───
+5s  ──
+4p  ──
+3d  ──
+4s  ──
+3p  ─
+3s  ─
+2p  ─
+2s  ─
+1s  ─
+
+Filling order:
+1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p
+    → 5s → 4d → 5p → 6s → 4f → 5d → 6p
+    → 7s → 5f → 6d → 7p
+```
+
 - $\ell$ is the azimuthal quantum number
 - The values $\ell=0,1,2,3$ correspond to the s, p, d, and f labels, respectively
 - Examples:
@@ -162,6 +238,17 @@
 
 # Electron configuration and orbital notation
 - Electron configurations can be represented using orbital notation
+
+```
+s sub-shell       p sub-shell          d sub-shell
+
+  ↑↓              ↑↓  ↑↓  ↑↓       ↑↓  ↑↓  ↑↓  ↑↓  ↑↓
+ [──]             [──][──][──]      [──][──][──][──][──]
+
+  1 orbital          3 orbitals           5 orbitals
+  2 electrons        6 electrons          10 electrons
+```
+
 - Each orbital can contain a maximum of 2 electrons
 - Electrons occupying the same orbital must have opposite spins
 - For example, the configuration
@@ -223,12 +310,40 @@
 
 # Dot notations
 - An atom’s valence electrons can be represented by Lewis dot notations
+
+```
+1 e⁻       2 e⁻       3 e⁻       4 e⁻
+
+  X          •X•        •X•        •X•
+             •           •          •
+                                  (one on each side)
+
+5 e⁻       6 e⁻       7 e⁻       8 e⁻
+
+ •X•        •X•        •X•        •X•
+  •          ••         ••         ••
+             •          •          ••
+```
+
+- Electrons are placed singly around the symbol before pairing them
+
 - Lewis dot notation represents the number of valence electrons around the element symbol
 - The possible numbers of valence electrons shown are 1 through 8
 - Electrons are placed singly around the symbol before pairing them
 
 # Dot notations – Period 2
 - Lewis dot notations can be used to represent the valence electrons of the elements of Period 2
+
+```
+Li•    •Be•    •B•     •C•
+                 •       •
+                         •
+
+ •N•    •O•    •F•    •Ne•
+  ••     ••     ••     ••
+  •      ••     ••     ••
+```
+
 - Lithium has 1 valence electron
 - Beryllium has 2 valence electrons
 - Boron has 3 valence electrons
@@ -281,6 +396,21 @@
 
 # Electromagnetic radiation
 - Electromagnetic radiation propagates through space as a wave moving at the speed of light in a vacuum
+
+```
+amplitude
+   ↑
+   │       /\        /\
+   │      /  \      /  \
+───┼─────/────\────/────\────→
+   │    /      \  /      \
+   │   /        \/        \
+   │
+   └──────────────────────────→ distance
+
+          ← wavelength →
+```
+
 - A wave has a wavelength, frequency, and amplitude
 - Amplitude describes the size of the wave
 - $c=\nu\lambda$
@@ -316,6 +446,17 @@
 # What it means
 - Short wavelength = high frequency = high energy
 - Long wavelength = low frequency = low energy
+
+```
+SHORT λ                         LONG λ
+high ν                          low ν
+high E                          low E
+
+/\/\/\/\/\/\/\/\/\             /\        /\        /\
+                             /  \      /  \      /  \
+```
+
+- Long wavelength = low frequency = low energy
 - Frequency is the number of cycles per second
 - $1\ \mathrm{cycle/s}=1\ \mathrm{Hz}$
 - For example, 4 cycles/s = 4 Hz, 8 cycles/s = 8 Hz, and 16 cycles/s = 16 Hz
@@ -337,6 +478,17 @@
 
 # Quanta and electron transitions
 - Definite amounts of energy are quanta
+
+```
+Higher energy   ───────────────  excited state
+                       ↑
+                       │ absorb photon
+                       │
+Lower energy    ───────────────  ground state
+                       ↓
+                       │ emit photon
+```
+
 - Electron transitions involve jumps between allowed energy states
 - When an electron moves to a higher energy state, it absorbs energy
 - When an electron moves to a lower energy state, it releases energy
@@ -346,6 +498,22 @@
 
 # Emission spectra
 - Electron transitions produce light with definite wavelengths
+
+```
+Hydrogen emission spectrum
+
+UV              Visible                          IR
+│                 │                              │
+│     | |         |  | |      |                 │
+└─────┴─┴─────────┴──┴─┴──────┴─────────────────┘
+      Lyman       Balmer                         Paschen
+
+Balmer lines:
+~410 nm   ~434 nm   ~486 nm   ~656 nm
+   |         |         |         |
+   |         |         |         |
+```
+
 - The lowest possible energy is the ground state
 - The Hydrogen Balmer series contains visible lines at approximately 410 nm, 434 nm, 486 nm, and 656 nm
 - An electron in a higher-energy state is in an excited state
@@ -373,6 +541,20 @@
 
 # Absorption spectra
 - Absorption spectra exist too
+
+```
+Continuous spectrum:
+
+████████████████████████████████████████
+
+Absorption spectrum:
+
+███████ ███████████ █████ ███████████████
+       ↑            ↑
+   absorbed      absorbed
+   wavelength    wavelength
+```
+
 - When light passes through matter, specific wavelengths can be absorbed
 - Absorption spectroscopy can be used to identify and analyze substances
 - An absorption spectrum generally contains dark lines or bands at wavelengths corresponding to absorbed photons
