@@ -133,3 +133,4 @@ for i,color in enumerate(colors):
     ax.add_patch(Rectangle((1+i*1.4,3.55),1.4,1.25,facecolor=color,edgecolor="none")); ax.add_patch(Rectangle((1+i*1.4,1),1.4,1.25,facecolor=color,edgecolor="none"))
 for xx in [3.45,5.2,8]: ax.add_patch(Rectangle((xx,1),.08,1.25,facecolor="#1f1f2a",edgecolor="none"))
 label(ax,1,5.15,r"$\text{continuous spectrum}$",13,ha="left"); label(ax,1,.55,r"$\text{absorption spectrum}$",13,ha="left"); label(ax,9,1.5,r"$\text{dark lines = absorbed wavelengths}$",11,ha="left"); save(fig,"absorption-spectrum.svg")
+
