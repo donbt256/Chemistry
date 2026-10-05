@@ -6,11 +6,21 @@
 - The negative charge of electrons is repulsed by the negative charge of other electrons
 - Electrons are most stable when at the lowest energy state possible
 
+# History of atomic models
+- John Dalton proposed the solid sphere model
+- J.J. Thomson proposed the plum pudding model after discovering the electron
+- Ernest Rutherford proposed the nuclear model after the gold foil experiment
+- Niels Bohr proposed the planetary model with electrons restricted to specific energy levels
+- Erwin Schrödinger developed the quantum mechanical model
+- The quantum mechanical model describes electrons as probability distributions rather than particles following fixed paths
+- Each model improved the description of the atom as new experimental evidence became available
+
 # The Bohr model of the atom
 - Niels Bohr pictured electrons orbiting the nucleus much like planets orbiting the sun
 - Bohr later recognized that this model was not correct; electrons are more like bees around a hive
 - Bohr’s model worked well for the Hydrogen atom only
 - The Bohr model is still useful for introducing quantized electron energy levels
+- “All models are wrong, but some are useful.” — George E. P. Box
 
 # Electron energy level (shell)
 - Generally symbolized by $n$
@@ -62,6 +72,8 @@
 # Aufbau principle
 - Electrons will fill the orbitals with the lowest energy first
 - An orbital is occupied only after all lower-energy orbitals are filled, except where the actual energy ordering of orbitals produces known exceptions
+- An Aufbau diagram shows the relative energy levels of the atomic orbitals
+- Orbitals higher on the diagram have greater energy
 
 # Aufbau and Madelung
 - The Madelung rule gives the order in which sub-shells are arranged by increasing energy
@@ -156,6 +168,33 @@
   - $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7$
   can be used to complete a spin diagram
 
+# Orbital notation examples
+- Lithium: $1s^2 2s^1$; noble gas notation: $[He]2s^1$
+- Beryllium: $1s^2 2s^2$; noble gas notation: $[He]2s^2$
+- Boron: $1s^2 2s^2 2p^1$; noble gas notation: $[He]2s^2 2p^1$
+- Carbon: $1s^2 2s^2 2p^2$; noble gas notation: $[He]2s^2 2p^2$
+- Nitrogen: $1s^2 2s^2 2p^3$; noble gas notation: $[He]2s^2 2p^3$
+- Oxygen: $1s^2 2s^2 2p^4$; noble gas notation: $[He]2s^2 2p^4$
+- Fluorine: $1s^2 2s^2 2p^5$; noble gas notation: $[He]2s^2 2p^5$
+- Neon: $1s^2 2s^2 2p^6$; noble gas notation: $[He]2s^2 2p^6$
+
+# Electron configurations of the first three series
+- The periodic table pattern for filling the $2p$ sub-shell is:
+  - B: $2p^1$
+  - C: $2p^2$
+  - N: $2p^3$
+  - O: $2p^4$
+  - F: $2p^5$
+  - Ne: $2p^6$
+- The same pattern appears in the $3p$ sub-shell:
+  - Al: $3p^1$
+  - Si: $3p^2$
+  - P: $3p^3$
+  - S: $3p^4$
+  - Cl: $3p^5$
+  - Ar: $3p^6$
+- This filling pattern works for the first 23 elements shown in the slide
+
 # Quantum numbers
 - Every electron in an atom is described by four quantum numbers
 - $n$ is the principal quantum number and describes the main energy level
@@ -242,6 +281,8 @@
 
 # Electromagnetic radiation
 - Electromagnetic radiation propagates through space as a wave moving at the speed of light in a vacuum
+- A wave has a wavelength, frequency, and amplitude
+- Amplitude describes the size of the wave
 - $c=\nu\lambda$
 - $c$ = speed of light in a vacuum, a constant ($3.00 \times 10^8\ \mathrm{m/s}$)
 - $\nu$ = frequency, in units of hertz (Hz, sec$^{-1}$)
@@ -275,6 +316,9 @@
 # What it means
 - Short wavelength = high frequency = high energy
 - Long wavelength = low frequency = low energy
+- Frequency is the number of cycles per second
+- $1\ \mathrm{cycle/s}=1\ \mathrm{Hz}$
+- For example, 4 cycles/s = 4 Hz, 8 cycles/s = 8 Hz, and 16 cycles/s = 16 Hz
 
 # One way of answering the dilemma of the atom
 - Treat electrons as waves
@@ -303,6 +347,7 @@
 # Emission spectra
 - Electron transitions produce light with definite wavelengths
 - The lowest possible energy is the ground state
+- The Hydrogen Balmer series contains visible lines at approximately 410 nm, 434 nm, 486 nm, and 656 nm
 - An electron in a higher-energy state is in an excited state
 - The Hydrogen emission spectrum produces a “bright line” spectrum
 - Each line corresponds to a specific energy difference between allowed states
@@ -316,6 +361,7 @@
 
 # Flame tests
 - Many elements give off characteristic light which can be used to help identify them
+- The same principle is used to produce characteristic colors in fireworks
 - Heat excites electrons to higher-energy states
 - When the electrons return to lower-energy states, photons are emitted
 - Elements shown include:
@@ -332,3 +378,4 @@
 - An absorption spectrum generally contains dark lines or bands at wavelengths corresponding to absorbed photons
 - An example is the direct detection and chemical analysis of the atmosphere of a planet outside our solar system
 - Sodium filters the alien star light of HD 209458 as the hot Jupiter-like planet passes in front
+- The slide illustrates starlight passing through a sodium-rich planetary atmosphere and then being analyzed with a spectrograph
