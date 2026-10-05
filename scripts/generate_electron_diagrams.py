@@ -1,170 +1,112 @@
-from PIL import Image,ImageDraw,ImageFont
 from pathlib import Path
-import math
-O=Path("diagrams/electrons"); O.mkdir(parents=True,exist_ok=True)
-W,H=1800,1000
-FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-F=lambda n:ImageFont.truetype(FONT,n)
-B=lambda n:ImageFont.truetype(BOLD,n)
-def base(t):
-    im=Image.new("RGBA",(W,H),(0,0,0,0))
-    d=ImageDraw.Draw(im)
-    d.text((70,45),t,font=B(52),fill=(20,25,35,255))
-    return im,d
-def save(im,n): im.save(O/n,"PNG",optimize=True)
+import matplotlib
+matplotlib.use("Agg")
+matplotlib.rcParams["svg.fonttype"] = "path"
+import matplotlib.pyplot as plt
+from matplotlib.patches import Circle, Rectangle, FancyArrowPatch, Ellipse
+import numpy as np
 
-im,d=base("Electron Energy Levels")
-for i,n in enumerate([1,2,3,4],1):
-    y=820-(i-1)*170
-    d.line((350,y,1450,y),fill=(35,90,180,255),width=8)
-    d.text((150,y-28),f"n = {n}",font=B(42),fill=(20,25,35,255))
-d.ellipse((875,830,925,880),fill=(210,55,55,255))
-d.text((780,900),"nucleus",font=F(34),fill=(20,25,35,255))
-save(im,"electron-energy-levels.png")
+OUT=Path("diagrams/electrons"); OUT.mkdir(parents=True,exist_ok=True)
+TEXT_COLOR="#123456"
 
-im,d=base("s and p Orbitals")
-cx,cy=360,560
-d.ellipse((cx-150,cy-150,cx+150,cy+150),fill=(75,140,220,180),outline=(30,80,150,255),width=5)
-d.text((cx-20,760),"s",font=B(46),fill=(20,25,35,255))
-for cx,cy,label,vertical in [(900,560,"pₓ",False),(1180,560,"pᵧ",True),(1460,560,"p_z",True)]:
-    if vertical:
-        d.ellipse((cx-70,cy-210,cx+70,cy),fill=(75,170,90,180),outline=(35,110,55,255),width=5)
-        d.ellipse((cx-70,cy,cx+70,cy+210),fill=(75,170,90,180),outline=(35,110,55,255),width=5)
-    else:
-        d.ellipse((cx-210,cy-70,cx,cy+70),fill=(75,170,90,180),outline=(35,110,55,255),width=5)
-        d.ellipse((cx,cy-70,cx+210,cy+70),fill=(75,170,90,180),outline=(35,110,55,255),width=5)
-    d.ellipse((cx-8,cy-8,cx+8,cy+8),fill=(25,25,25,255))
-    d.text((cx-35,820),label,font=B(42),fill=(20,25,35,255))
-save(im,"s-and-p-orbitals.png")
+def figure(title):
+    fig,ax=plt.subplots(figsize=(12,6.67)); fig.patch.set_alpha(0)
+    ax.set_facecolor("none"); ax.set_xlim(0,12); ax.set_ylim(0,6.67); ax.axis("off")
+    ax.text(.25,6.25,title,color=TEXT_COLOR,fontsize=22,fontweight="bold",va="center")
+    return fig,ax
+def label(ax,x,y,s,size=14,**kw):
+    kw.setdefault("color",TEXT_COLOR); kw.setdefault("ha","center"); kw.setdefault("va","center")
+    ax.text(x,y,s,fontsize=size,**kw)
+def save(fig,name):
+    p=OUT/name; fig.savefig(p,format="svg",transparent=True,bbox_inches="tight",pad_inches=.05); plt.close(fig)
+    d=p.read_text(encoding="utf-8").replace(TEXT_COLOR,"currentColor"); p.write_text(d,encoding="utf-8")
 
-im,d=base("Periodic Table Blocks")
-x0,y0,cell=180,270,42
+fig,ax=figure(r"Electron energy levels")
+for i,n in enumerate([1,2,3,4]):
+    y=1+i*1.05; ax.plot([2.4,10.5],[y,y],lw=3,color="#355f9e"); label(ax,1.4,y,r"$n=%d$"%n,18)
+ax.add_patch(Circle((6.45,.48),.13,color="#b73737")); label(ax,6.45,.12,r"$\mathrm{nucleus}$",13)
+save(fig,"electron-energy-levels.svg")
+
+fig,ax=figure(r"$s$ and $p$ orbitals")
+ax.add_patch(Circle((2.1,3.15),1.15,facecolor="#78aee8",alpha=.65,edgecolor="#315f9a",lw=2)); label(ax,2.1,1.25,r"$s$",20)
+for x,orient,name in [(6,"h",r"$p_x$"),(8.5,"v",r"$p_y$"),(11,"v",r"$p_z$")]:
+    if orient=="h": ax.add_patch(Ellipse((x,3.15),2.5,.75,facecolor="#79b37f",alpha=.65,edgecolor="#3c7b42",lw=2))
+    else: ax.add_patch(Ellipse((x,3.15),.8,2.5,facecolor="#79b37f",alpha=.65,edgecolor="#3c7b42",lw=2))
+    ax.add_patch(Circle((x,3.15),.07,color="#222222")); label(ax,x,1.25,name,20)
+save(fig,"s-and-p-orbitals.svg")
+
+fig,ax=figure(r"Periodic table blocks")
 for r in range(7):
-    for c in range(2):
-        d.rectangle((x0+c*cell,y0+r*cell,x0+(c+1)*cell,y0+(r+1)*cell),outline=(210,70,70,255),width=3)
-d.text((x0,y0-55),"s-block",font=B(40),fill=(190,45,45,255))
-xd=500
+    for c in range(2): ax.add_patch(Rectangle((.7+c*.38,1.25+r*.38),.38,.38,fill=False,edgecolor="#c04a4a",lw=1.5))
 for r in range(4):
-    for c in range(10):
-        d.rectangle((xd+c*cell,y0+2*cell+r*cell,xd+(c+1)*cell,y0+2*cell+(r+1)*cell),outline=(45,105,200,255),width=3)
-d.text((xd,y0+2*cell-55),"d-block",font=B(40),fill=(35,85,180,255))
-xp=960
+    for c in range(10): ax.add_patch(Rectangle((3+c*.38,2.01+r*.38),.38,.38,fill=False,edgecolor="#3d70bd",lw=1.5))
 for r in range(6):
-    for c in range(6):
-        d.rectangle((xp+c*cell,y0+r*cell,xp+(c+1)*cell,y0+(r+1)*cell),outline=(60,150,75,255),width=3)
-d.text((xp,y0-55),"p-block",font=B(40),fill=(45,130,60,255))
-xf,yf=650,700
+    for c in range(6): ax.add_patch(Rectangle((7+c*.38,1.25+r*.38),.38,.38,fill=False,edgecolor="#4f9c58",lw=1.5))
 for r in range(2):
-    for c in range(14):
-        d.rectangle((xf+c*cell,yf+r*cell,xf+(c+1)*cell,yf+(r+1)*cell),outline=(125,75,190,255),width=3)
-d.text((xf,yf-55),"f-block",font=B(40),fill=(105,60,170,255))
-for y,t in [(350,"s: Groups 1–2"),(420,"p: Groups 13–18"),(490,"d: transition metals"),(560,"f: lanthanides + actinides")]:
-    d.text((1250,y),t,font=F(36),fill=(20,25,35,255))
-save(im,"periodic-table-blocks.png")
+    for c in range(14): ax.add_patch(Rectangle((4.1+c*.38,.35+r*.38),.38,.38,fill=False,edgecolor="#8057ad",lw=1.5))
+label(ax,1.1,4.15,r"$s$-block",17,color="#c04a4a"); label(ax,4.7,4.15,r"$d$-block",17,color="#3d70bd"); label(ax,8,4.15,r"$p$-block",17,color="#4f9c58"); label(ax,6.75,.05,r"$f$-block",17,color="#8057ad")
+label(ax,9.9,2.95,r"$s$: Groups 1--2",12,ha="left"); label(ax,9.9,2.45,r"$p$: Groups 13--18",12,ha="left"); label(ax,9.9,1.95,r"$d$: transition metals",12,ha="left"); label(ax,9.9,1.45,r"$f$: lanthanides + actinides",12,ha="left")
+save(fig,"periodic-table-blocks.svg")
 
-im,d=base("Aufbau / Madelung Filling Order")
-levels=["1s","2s","2p","3s","3p","4s","3d","4p","5s","4d","5p","6s","4f","5d","6p","7s","5f","6d","7p"]
-C={}
+fig,ax=figure(r"Aufbau / Madelung filling order")
+levels=["1s","2s","2p","3s","3p","4s","3d","4p","5s","4d","5p","6s","4f","5d","6p","7s","5f","6d","7p"]; coords={}
 for i,s in enumerate(levels):
-    col,row=i//6,i%6
-    x,y=170+col*500,170+row*110
-    C[s]=(x,y)
-    d.rounded_rectangle((x,y,x+150,y+70),12,fill=(245,245,250,255),outline=(60,90,150,255),width=4)
-    d.text((x+48,y+13),s,font=B(34),fill=(20,25,35,255))
+    col,row=divmod(i,6); x,y=1+col*3.35,5.45-row*.78; coords[s]=(x,y)
+    ax.add_patch(Rectangle((x-.55,y-.25),1.1,.5,facecolor="#f2f3f7",edgecolor="#4b6794",lw=1.5)); label(ax,x,y,"$"+s+"$",14)
 for a,b in zip(levels,levels[1:]):
-    x,y=C[a]; xx,yy=C[b]
-    d.line((x+150,y+35,xx,yy+35),fill=(220,80,50,255),width=5)
-d.text((1050,850),"1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → …",font=F(34),fill=(20,25,35,255))
-save(im,"aufbau-madelung.png")
+    x,y=coords[a]; xx,yy=coords[b]; ax.add_patch(FancyArrowPatch((x+.55,y),(xx-.55,yy),arrowstyle="->",mutation_scale=12,lw=1.5,color="#c85b3d"))
+label(ax,6,.55,r"$1s\rightarrow2s\rightarrow2p\rightarrow3s\rightarrow3p\rightarrow4s\rightarrow3d\rightarrow4p\rightarrow\cdots$",15)
+save(fig,"aufbau-madelung.svg")
 
-im,d=base("Orbital Notation")
-els=[("C","1s² 2s² 2p²",["↑↓","↑","↑"]),("N","1s² 2s² 2p³",["↑","↑","↑"]),("O","1s² 2s² 2p⁴",["↑↓","↑","↑"]),("F","1s² 2s² 2p⁵",["↑↓","↑↓","↑"]),("Ne","1s² 2s² 2p⁶",["↑↓","↑↓","↑↓"])]
-for j,(el,conf,boxes) in enumerate(els):
-    x=80+j*340
-    d.text((x,180),el,font=B(42),fill=(20,25,35,255))
-    d.text((x-15,235),conf,font=F(28),fill=(20,25,35,255))
-    d.text((x,330),"2p",font=B(30),fill=(20,25,35,255))
-    for k,bx in enumerate(boxes):
-        xx=x+k*85
-        d.rectangle((xx,390,xx+65,455),outline=(35,75,130,255),width=4)
-        d.text((xx+18,395),bx,font=B(30),fill=(20,25,35,255))
-d.text((100,720),"Each orbital holds at most 2 electrons; Hund’s rule fills degenerate orbitals singly before pairing.",font=F(31),fill=(20,25,35,255))
-save(im,"orbital-notation.png")
+fig,ax=figure(r"Orbital notation")
+examples=[(r"$\mathrm{C}$",r"$1s^2\;2s^2\;2p^2$",[r"$\uparrow\downarrow$",r"$\uparrow$",r"$\uparrow$"]),(r"$\mathrm{N}$",r"$1s^2\;2s^2\;2p^3$",[r"$\uparrow$",r"$\uparrow$",r"$\uparrow$"]),(r"$\mathrm{O}$",r"$1s^2\;2s^2\;2p^4$",[r"$\uparrow\downarrow$",r"$\uparrow$",r"$\uparrow$"]),(r"$\mathrm{F}$",r"$1s^2\;2s^2\;2p^5$",[r"$\uparrow\downarrow$",r"$\uparrow\downarrow$",r"$\uparrow$"]),(r"$\mathrm{Ne}$",r"$1s^2\;2s^2\;2p^6$",[r"$\uparrow\downarrow$",r"$\uparrow\downarrow$",r"$\uparrow\downarrow$"])]
+for j,(el,conf,arrows) in enumerate(examples):
+    x=1+j*2.2; label(ax,x,5.25,el,19); label(ax,x,4.7,conf,11)
+    for k,a in enumerate(arrows):
+        xx=x-.55+k*.55; ax.add_patch(Rectangle((xx,3.55),.42,.55,fill=False,edgecolor="#355f9e",lw=1.5)); label(ax,xx+.21,3.82,a,15)
+label(ax,6,1.15,r"$\text{Each orbital holds at most 2 electrons; Hund's rule fills degenerate orbitals singly before pairing.}$",11)
+save(fig,"orbital-notation.svg")
 
-im,d=base("Lewis Dot Notation")
-pos=[(180,40),(220,90),(180,145),(140,90),(140,40),(220,40),(220,145),(140,145)]
+fig,ax=figure(r"Lewis dot notation")
+positions=[(0,.42),(.42,0),(0,-.42),(-.42,0),(.42,.42),(-.42,.42),(.42,-.42),(-.42,-.42)]
 for i,n in enumerate(range(1,9)):
-    x,y=140+(i%4)*410,220+(i//4)*350
-    d.text((x+105,y-20),f"{n} valence e⁻",font=B(32),fill=(20,25,35,255))
-    d.text((x+180,y+70),"X",font=B(62),fill=(20,25,35,255))
-    for k in range(n):
-        px,py=pos[k]
-        d.ellipse((x+px-7,y+py-7,x+px+7,y+py+7),fill=(30,30,30,255))
-save(im,"lewis-dot-notation.png")
+    x=1.2+(i%4)*2.75; y=4.65-(i//4)*2.35; label(ax,x,y,r"$X$",26)
+    for k in range(n): dx,dy=positions[k]; label(ax,x+dx,y+dy,r"$\bullet$",15)
+    label(ax,x,y-.78,r"$%d\;\mathrm{valence\ electrons}$"%n,11)
+save(fig,"lewis-dot-notation.svg")
 
-im,d=base("Period 2 Lewis Dot Notation")
+fig,ax=figure(r"Period 2 Lewis dot notation")
 els=[("Li",1),("Be",2),("B",3),("C",4),("N",5),("O",6),("F",7),("Ne",8)]
 for i,(el,n) in enumerate(els):
-    x,y=110+i*210,300
-    d.text((x+45,y),el,font=B(42),fill=(20,25,35,255))
-    for px,py in pos[:n]:
-        d.ellipse((x+px-6,y+py-6,x+px+6,y+py+6),fill=(25,25,25,255))
-d.text((520,650),"Valence electrons increase from 1 → 8 across Period 2.",font=F(36),fill=(20,25,35,255))
-save(im,"period-2-lewis-dots.png")
+    x=.9+i*1.45; y=3.65; label(ax,x,y,"$\\mathrm{%s}$"%el,17)
+    for k in range(n): dx,dy=positions[k]; label(ax,x+dx*.72,y+dy*.72,r"$\bullet$",11)
+label(ax,6,1,r"$\text{Valence electrons increase from 1 to 8 across Period 2.}$",13); save(fig,"period-2-lewis-dots.svg")
 
-im,d=base("Electromagnetic Wave")
-x0,x1,mid,amp=150,1650,560,180
-pts=[(x0+(x1-x0)*i/600,mid-amp*math.sin(2*math.pi*3*i/600)) for i in range(601)]
-d.line(pts,fill=(55,95,190,255),width=8)
-d.line((x0,mid,x1,mid),fill=(80,80,80,180),width=3)
-d.text((120,260),"amplitude",font=B(34),fill=(20,25,35,255))
-d.line((100,mid-amp,100,mid),fill=(220,80,50,255),width=5)
-d.line((250,820,650,820),fill=(220,80,50,255),width=5)
-d.text((375,840),"wavelength λ",font=F(32),fill=(20,25,35,255))
-save(im,"electromagnetic-wave.png")
+fig,ax=figure(r"Electromagnetic wave")
+x=np.linspace(.7,11.3,700); y=3.2+1.15*np.sin(2*np.pi*3*(x-.7)/10.6); ax.plot(x,y,color="#355f9e",lw=3); ax.plot([.7,11.3],[3.2,3.2],color="#777777",lw=1)
+ax.annotate("",xy=(1,4.35),xytext=(1,3.2),arrowprops=dict(arrowstyle="<->",color="#c85b3d",lw=2)); label(ax,1.45,3.85,r"$\text{amplitude}$",12,ha="left")
+ax.annotate("",xy=(4.25,1),xytext=(6,1),arrowprops=dict(arrowstyle="<->",color="#c85b3d",lw=2)); label(ax,5.12,.62,r"$\text{wavelength }\lambda$",12); save(fig,"electromagnetic-wave.svg")
 
-im,d=base("Wavelength and Frequency")
-for label,cyc,y in [("low frequency / long wavelength",2,350),("high frequency / short wavelength",8,700)]:
-    pts=[(150+1450*i/500,y-90*math.sin(2*math.pi*cyc*i/500)) for i in range(501)]
-    d.line(pts,fill=(55,95,190,255),width=7)
-    d.text((160,y-170),label,font=B(34),fill=(20,25,35,255))
-d.text((540,880),"At constant speed:  c = νλ",font=B(42),fill=(20,25,35,255))
-save(im,"wavelength-frequency.png")
+fig,ax=figure(r"Wavelength and frequency")
+for y,cycles,txt in [(4.35,2,r"$\text{low frequency / long wavelength}$"),(2,8,r"$\text{high frequency / short wavelength}$")]:
+    xx=np.linspace(.9,11.1,700); yy=y+.55*np.sin(2*np.pi*cycles*(xx-.9)/10.2); ax.plot(xx,yy,color="#355f9e",lw=2.5); label(ax,1.1,y+.9,txt,12,ha="left")
+label(ax,6,.55,r"$c=\nu\lambda$",21); save(fig,"wavelength-frequency.svg")
 
-im,d=base("Electron Transitions")
-ys={1:800,2:610,3:420,4:230}
-for n,y in ys.items():
-    d.line((300,y,1250,y),fill=(50,75,120,255),width=6)
-    d.text((180,y-25),f"n = {n}",font=B(36),fill=(20,25,35,255))
-d.line((700,790,700,240),fill=(50,130,210,255),width=8)
-d.text((760,430),"absorption",font=B(36),fill=(40,105,180,255))
-d.line((1000,240,1000,790),fill=(225,90,55,255),width=8)
-d.text((1060,500),"emission",font=B(36),fill=(190,65,40,255))
-d.text((520,880),"ΔE = hν",font=B(42),fill=(20,25,35,255))
-save(im,"electron-transitions.png")
+fig,ax=figure(r"Electron transitions")
+ys={1:1,2:2.15,3:3.3,4:4.45}
+for n,y in ys.items(): ax.plot([2,9.8],[y,y],color="#355f9e",lw=2.5); label(ax,1.35,y,r"$n=%d$"%n,14)
+ax.add_patch(FancyArrowPatch((5,1),(5,4.35),arrowstyle="->",mutation_scale=16,lw=2.5,color="#3d78bd")); label(ax,6.1,2.75,r"$\text{absorption}$",13,ha="left")
+ax.add_patch(FancyArrowPatch((8,4.45),(8,1.1),arrowstyle="->",mutation_scale=16,lw=2.5,color="#c85b3d")); label(ax,8.55,2.75,r"$\text{emission}$",13,ha="left"); label(ax,6,.35,r"$\Delta E=h\nu$",20); save(fig,"electron-transitions.svg")
 
-im,d=base("Hydrogen Emission Spectrum — Balmer Series")
-d.text((100,180),"visible region",font=B(34),fill=(20,25,35,255))
-d.rectangle((100,300,1700,500),fill=(230,230,240,255))
-for nm,c in [(410,(130,60,190,255)),(434,(50,140,220,255)),(486,(30,170,210,255)),(656,(190,40,50,255))]:
-    x=100+(nm-400)/(700-400)*1600
-    d.rectangle((x-6,300,x+6,500),fill=c)
-    d.text((x-45,540),f"{nm} nm",font=B(28),fill=(20,25,35,255))
-d.text((100,700),"Balmer lines correspond to transitions ending at n = 2.",font=F(36),fill=(20,25,35,255))
-save(im,"hydrogen-emission-spectrum.png")
+fig,ax=figure(r"Hydrogen emission spectrum — Balmer series")
+ax.add_patch(Rectangle((1,2.65),10,1.4,facecolor="#e8e8ef",edgecolor="none"))
+for nm,color in [(410,"#8238a6"),(434,"#3d83d4"),(486,"#31a9c4"),(656,"#bf3038")]:
+    xx=1+(nm-400)/300*10; ax.plot([xx,xx],[2.65,4.05],color=color,lw=5); label(ax,xx,2.15,r"$%d\;\mathrm{nm}$"%nm,11)
+label(ax,1,4.55,r"$\text{visible region}$",13,ha="left"); label(ax,6,.9,r"$\text{Balmer lines correspond to transitions ending at }n=2.$",12); save(fig,"hydrogen-emission-spectrum.svg")
 
-im,d=base("Absorption Spectrum")
-seg=[(210,60,70),(235,80,55),(250,170,45),(220,205,50),(70,160,80),(60,120,200),(100,80,180)]
-x=100
-d.text((100,200),"continuous spectrum",font=B(34),fill=(20,25,35,255))
-for c in seg:
-    d.rectangle((x,280,x+230,480),fill=(*c,255)); x+=230
-d.text((100,570),"absorption spectrum",font=B(34),fill=(20,25,35,255))
-x=100
-for c in seg:
-    d.rectangle((x,650,x+230,850),fill=(*c,255)); x+=230
-for xx in [520,875,1330]:
-    d.rectangle((xx,650,xx+12,850),fill=(20,20,30,255))
-d.text((100,900),"Dark lines mark wavelengths absorbed by the material.",font=F(30),fill=(20,25,35,255))
-save(im,"absorption-spectrum.png")
+fig,ax=figure(r"Absorption spectrum")
+colors=["#d23c46","#d98739","#d7bc3e","#72a84e","#3e9f88","#3f76bd","#7950a6"]
+for i,color in enumerate(colors):
+    ax.add_patch(Rectangle((1+i*1.4,3.55),1.4,1.25,facecolor=color,edgecolor="none")); ax.add_patch(Rectangle((1+i*1.4,1),1.4,1.25,facecolor=color,edgecolor="none"))
+for xx in [3.45,5.2,8]: ax.add_patch(Rectangle((xx,1),.08,1.25,facecolor="#1f1f2a",edgecolor="none"))
+label(ax,1,5.15,r"$\text{continuous spectrum}$",13,ha="left"); label(ax,1,.55,r"$\text{absorption spectrum}$",13,ha="left"); label(ax,9,1.5,r"$\text{dark lines = absorbed wavelengths}$",11,ha="left"); save(fig,"absorption-spectrum.svg")
