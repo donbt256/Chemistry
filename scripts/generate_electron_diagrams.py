@@ -86,7 +86,16 @@ examples=[(r"$\mathrm{C}$",r"$1s^2\;2s^2\;2p^2$",[r"$\uparrow\downarrow$",r"$\up
 for j,(el,conf,arrows) in enumerate(examples):
     x=1+j*2.2; label(ax,x,5.25,el,19); label(ax,x,4.7,conf,11)
     for k,a in enumerate(arrows):
-        xx=x-.42+k*.42; ax.add_patch(Rectangle((xx,3.55),.42,.55,fill=False,edgecolor="#355f9e",lw=1.5)); label(ax,xx+.21,3.825,a,11)
+        xx=x-.42+k*.42
+        ax.add_patch(Rectangle((xx,3.55),.42,.55,fill=False,edgecolor="#355f9e",lw=1.5))
+        cx=xx+.21
+        if a == r"$\\uparrow\\downarrow$":
+            ax.add_patch(FancyArrowPatch((cx,3.65),(cx,3.98),arrowstyle="-|>",mutation_scale=8,lw=1.4,color=TEXT_COLOR))
+            ax.add_patch(FancyArrowPatch((cx,4.00),(cx,3.67),arrowstyle="-|>",mutation_scale=8,lw=1.4,color=TEXT_COLOR))
+        elif a == r"$\\uparrow$":
+            ax.add_patch(FancyArrowPatch((cx,3.65),(cx,4.02),arrowstyle="-|>",mutation_scale=8,lw=1.4,color=TEXT_COLOR))
+        else:
+            ax.add_patch(FancyArrowPatch((cx,3.98),(cx,3.61),arrowstyle="-|>",mutation_scale=8,lw=1.4,color=TEXT_COLOR))
 label(ax,6,1.15,r"$\text{Each orbital holds at most 2 electrons; Hund's rule fills degenerate orbitals singly before pairing.}$",11)
 save(fig,"orbital-notation.svg")
 
