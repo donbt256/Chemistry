@@ -1,4 +1,5 @@
 name: Generate Electron Diagram SVGs
+# Regenerates the diagrams whenever the generator changes.
 
 on:
   push:
