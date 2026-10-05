@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:06:19.002165</dc:date>
+    <dc:date>2026-10-05T17:06:50.488934</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -36,7 +36,7 @@ L 137.52 176.5728
 L 137.52 107.2728 
 L 59.4 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d23c46"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d23c46"/>
    </g>
    <g id="patch_3">
     <path d="M 59.4 317.9448 
@@ -44,7 +44,7 @@ L 137.52 317.9448
 L 137.52 248.6448 
 L 59.4 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d23c46"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d23c46"/>
    </g>
    <g id="patch_4">
     <path d="M 137.52 176.5728 
@@ -52,7 +52,7 @@ L 215.64 176.5728
 L 215.64 107.2728 
 L 137.52 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d98739"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d98739"/>
    </g>
    <g id="patch_5">
     <path d="M 137.52 317.9448 
@@ -60,7 +60,7 @@ L 215.64 317.9448
 L 215.64 248.6448 
 L 137.52 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d98739"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d98739"/>
    </g>
    <g id="patch_6">
     <path d="M 215.64 176.5728 
@@ -68,7 +68,7 @@ L 293.76 176.5728
 L 293.76 107.2728 
 L 215.64 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d7bc3e"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d7bc3e"/>
    </g>
    <g id="patch_7">
     <path d="M 215.64 317.9448 
@@ -76,7 +76,7 @@ L 293.76 317.9448
 L 293.76 248.6448 
 L 215.64 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #d7bc3e"/>
+" clip-path="url(#p380b1be9da)" style="fill: #d7bc3e"/>
    </g>
    <g id="patch_8">
     <path d="M 293.76 176.5728 
@@ -84,7 +84,7 @@ L 371.88 176.5728
 L 371.88 107.2728 
 L 293.76 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #72a84e"/>
+" clip-path="url(#p380b1be9da)" style="fill: #72a84e"/>
    </g>
    <g id="patch_9">
     <path d="M 293.76 317.9448 
@@ -92,7 +92,7 @@ L 371.88 317.9448
 L 371.88 248.6448 
 L 293.76 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #72a84e"/>
+" clip-path="url(#p380b1be9da)" style="fill: #72a84e"/>
    </g>
    <g id="patch_10">
     <path d="M 371.88 176.5728 
@@ -100,7 +100,7 @@ L 450 176.5728
 L 450 107.2728 
 L 371.88 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #3e9f88"/>
+" clip-path="url(#p380b1be9da)" style="fill: #3e9f88"/>
    </g>
    <g id="patch_11">
     <path d="M 371.88 317.9448 
@@ -108,7 +108,7 @@ L 450 317.9448
 L 450 248.6448 
 L 371.88 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #3e9f88"/>
+" clip-path="url(#p380b1be9da)" style="fill: #3e9f88"/>
    </g>
    <g id="patch_12">
     <path d="M 450 176.5728 
@@ -116,7 +116,7 @@ L 528.12 176.5728
 L 528.12 107.2728 
 L 450 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #3f76bd"/>
+" clip-path="url(#p380b1be9da)" style="fill: #3f76bd"/>
    </g>
    <g id="patch_13">
     <path d="M 450 317.9448 
@@ -124,7 +124,7 @@ L 528.12 317.9448
 L 528.12 248.6448 
 L 450 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #3f76bd"/>
+" clip-path="url(#p380b1be9da)" style="fill: #3f76bd"/>
    </g>
    <g id="patch_14">
     <path d="M 528.12 176.5728 
@@ -132,7 +132,7 @@ L 606.24 176.5728
 L 606.24 107.2728 
 L 528.12 107.2728 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #7950a6"/>
+" clip-path="url(#p380b1be9da)" style="fill: #7950a6"/>
    </g>
    <g id="patch_15">
     <path d="M 528.12 317.9448 
@@ -140,7 +140,7 @@ L 606.24 317.9448
 L 606.24 248.6448 
 L 528.12 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #7950a6"/>
+" clip-path="url(#p380b1be9da)" style="fill: #7950a6"/>
    </g>
    <g id="patch_16">
     <path d="M 196.11 317.9448 
@@ -148,7 +148,7 @@ L 200.574 317.9448
 L 200.574 248.6448 
 L 196.11 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #1f1f2a"/>
+" clip-path="url(#p380b1be9da)" style="fill: #1f1f2a"/>
    </g>
    <g id="patch_17">
     <path d="M 293.76 317.9448 
@@ -156,7 +156,7 @@ L 298.224 317.9448
 L 298.224 248.6448 
 L 293.76 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #1f1f2a"/>
+" clip-path="url(#p380b1be9da)" style="fill: #1f1f2a"/>
    </g>
    <g id="patch_18">
     <path d="M 450 317.9448 
@@ -164,7 +164,7 @@ L 454.464 317.9448
 L 454.464 248.6448 
 L 450 248.6448 
 z
-" clip-path="url(#pcb95d61204)" style="fill: #1f1f2a"/>
+" clip-path="url(#p380b1be9da)" style="fill: #1f1f2a"/>
    </g>
    <g id="text_1">
     <!-- Absorption spectrum -->
@@ -1027,7 +1027,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pcb95d61204">
+  <clipPath id="p380b1be9da">
    <rect x="3.6" y="3.6" width="669.6" height="369.7848"/>
   </clipPath>
  </defs>
