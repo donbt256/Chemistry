@@ -1,6 +1,7 @@
 # Electron levels
 - Electrons exist within a cloud surrounding the atomic nucleus
-- The cloud consists of different energy levels, called orbitals
+- The cloud consists of different energy levels, called shells
+- Electrons are found in orbitals within these shells
 - The negative charge of electrons is attracted to the positive charge of the protons in the nucleus
 - The negative charge of electrons is repulsed by the negative charge of other electrons
 - Electrons are most stable when at the lowest energy state possible
@@ -9,21 +10,23 @@
 - Niels Bohr pictured electrons orbiting the nucleus much like planets orbiting the sun
 - Bohr later recognized that this model was not correct; electrons are more like bees around a hive
 - Bohr’s model worked well for the Hydrogen atom only
+- The Bohr model is still useful for introducing quantized electron energy levels
 
 # Electron energy level (shell)
 - Generally symbolized by $n$
-- $n$ denotes the probable distance of the electron from the nucleus
-- $n$ is also known as the principal quantum number
+- $n$ is the principal quantum number
+- Higher $n$ values generally correspond to electrons being farther from the nucleus and having higher energy
 - The number of electrons that can fit in a shell is $2n^2$
 - Level 1: $2(1)^2 = 2$
 - Level 2: $2(2)^2 = 8$
 - Level 3: $2(3)^2 = 18$
 - Level 4: $2(4)^2 = 32$
-- This really only works for the first 4 levels
+- The $2n^2$ rule applies to all principal energy levels
 
 # Shells, sub-shells, and orbitals
-- A shell describes the energy level that an electron occupies
-- An orbital describes the shape or location of an electron in the space around the nucleus
+- A shell describes the principal energy level that an electron occupies
+- A sub-shell describes a group of orbitals with the same value of the azimuthal quantum number
+- An orbital is a region of space where there is a high probability of finding an electron
 - A shell contains sub-shells
 - Sub-shells can be s, p, d, or f
 - Sub-shells contain orbitals
@@ -32,10 +35,12 @@
 
 # Electron orbitals
 - An orbital is a region within an energy level where there is a probability of finding an electron
-- Orbital shapes are defined as the surface that contains 90% of the total electron probability
-- The s orbital has a spherical shape centered around the origin of the three axes in space
-- There are three dumbbell-shaped p orbitals in each energy level above $n=1$, each assigned to its own axis (x, y, and z) in space
+- Orbital shapes are commonly represented by a surface enclosing about 90% of the total electron probability
+- The s orbital has a spherical shape centered around the nucleus
+- There are three dumbbell-shaped p orbitals, labeled $p_x$, $p_y$, and $p_z$
+- The p sub-shell first occurs at $n=2$
 - The five d orbitals are found in the d sublevels beginning with $n=3$
+- The seven f orbitals are found in the f sublevels beginning with $n=4$
 - The d orbital shapes can be thought of as “double dumbbells” and a “dumbbell with a donut”
 
 # Energy levels, orbitals, and electrons
@@ -48,9 +53,15 @@
 
 # Blocks on the periodic table
 - Elements of the same period have the same number of electron shells
+- The periodic table is divided into s, p, d, and f blocks based on the sub-shell being filled
+- The s block contains Groups 1 and 2
+- The p block contains Groups 13 through 18
+- The d block contains the transition metals
+- The f block contains the lanthanides and actinides
 
 # Aufbau principle
 - Electrons will fill the orbitals with the lowest energy first
+- An orbital is occupied only after all lower-energy orbitals are filled, except where the actual energy ordering of orbitals produces known exceptions
 
 # Aufbau and Madelung
 - The Madelung rule gives the order in which sub-shells are arranged by increasing energy
@@ -67,6 +78,26 @@
   - $4p \rightarrow n=4$, $\ell=1$; $n+\ell=5$
   - $5s \rightarrow n=5$, $\ell=0$; $n+\ell=5$
 - When 2 sub-shells have the same value for $n+\ell$, the one with the lower $n$ value comes first
+- The commonly used filling order is:
+  - $1s$
+  - $2s$
+  - $2p$
+  - $3s$
+  - $3p$
+  - $4s$
+  - $3d$
+  - $4p$
+  - $5s$
+  - $4d$
+  - $5p$
+  - $6s$
+  - $4f$
+  - $5d$
+  - $6p$
+  - $7s$
+  - $5f$
+  - $6d$
+  - $7p$
 
 # Electron configuration
 - When writing the electron configuration of an element, always write them in order from lowest energy to highest
@@ -76,11 +107,13 @@
   - Number of electrons found in sub-shell
 - Example: $1s^2$
 - This is the configuration for Helium
+- The superscript gives the number of electrons in that sub-shell
 
 ## Steps for configuration
-- Count the number of electrons (equal to the atomic number)
+- Count the number of electrons (equal to the atomic number for a neutral atom)
 - Start at the lowest energy level ($1s$)
 - Continue adding electrons until you run out
+- For an ion, add or remove electrons according to the charge
 
 ## Example
 - Cobalt has 27 electrons
@@ -94,14 +127,26 @@
   - $3d^7$
 - Noble gas configuration: $[Ar]4s^2 3d^7$
 
+# Electron configuration exceptions
+- Some elements have electron configurations that differ from the simple Aufbau prediction because the actual energies of sub-shells are very close
+- Common examples include:
+  - Chromium: $[Ar]4s^1 3d^5$
+  - Copper: $[Ar]4s^1 3d^{10}$
+- The exact configuration should be determined from experimental evidence rather than assuming every element follows a simple filling diagram
+
 # Electron spin
-- Electron spin describes the behavior (direction of spin) of an electron within a magnetic field
+- Electron spin describes an intrinsic quantum property of an electron
+- Spin is commonly represented as $+\frac{1}{2}$ or $-\frac{1}{2}$
+- The two possible spin states are often drawn as arrows pointing in opposite directions
 
 # Pauli exclusion principle
 - Only two electrons may occupy the same orbital and they must have opposite spins
+- No two electrons in the same atom can have the same set of all four quantum numbers
 
 # Hund's rule
 - If filling orbitals of the same energy then maximize the magnitude of the spin
+- Electrons occupy degenerate orbitals singly before pairing
+- For example, the three p orbitals are filled one at a time before electrons are paired
 
 # Electron configuration and orbital notation
 - Electron configurations can be represented using orbital notation
@@ -110,7 +155,15 @@
 - For example, the configuration
   - $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7$
   can be used to complete a spin diagram
-- The electron configuration pattern shown works for the first 23 elements
+
+# Quantum numbers
+- Every electron in an atom is described by four quantum numbers
+- $n$ is the principal quantum number and describes the main energy level
+- $\ell$ is the azimuthal quantum number and describes the sub-shell
+- $m_\ell$ is the magnetic quantum number and describes the orbital within a sub-shell
+- $m_s$ is the spin quantum number and can be $+\frac{1}{2}$ or $-\frac{1}{2}$
+- For a given $\ell$, $m_\ell$ can have values from $-\ell$ to $+\ell$
+- The number of possible orbitals in a sub-shell is $2\ell+1$
 
 # Valence electrons
 - Valence electrons are electrons in the outermost shell (energy level)
@@ -123,8 +176,9 @@
 - Group 16 elements have 6 valence electrons
 - Group 17 (halogens) have 7 valence electrons
 - Group 18 (noble gases) have 8 valence electrons, except helium, which has only 2
-- Lanthanides and actinides (“f” block) have ??? valence electrons
-- In practice, valence electrons are the electrons in the s and p sub-shells of the outermost shell only
+- For the transition metals, electrons in the $(n-1)d$ sub-shell can also participate in bonding
+- Lanthanides and actinides can have variable numbers of electrons involved in bonding
+- For the main-group elements, valence electrons are generally the electrons in the outermost s and p sub-shells
 - This is a simplified model and does not fit all observed atomic behavior, but will work for our purposes
 - Elements in the same group have the same number of valence electrons and thus have similar chemical properties
 
@@ -132,6 +186,7 @@
 - An atom’s valence electrons can be represented by Lewis dot notations
 - Lewis dot notation represents the number of valence electrons around the element symbol
 - The possible numbers of valence electrons shown are 1 through 8
+- Electrons are placed singly around the symbol before pairing them
 
 # Dot notations – Period 2
 - Lewis dot notations can be used to represent the valence electrons of the elements of Period 2
@@ -147,43 +202,66 @@
 # Wave-particle duality
 - “No familiar conceptions can be woven around the electron. Something unknown is doing we don’t know what.” — Sir Arthur Eddington
 - The electron exhibits wave-particle duality
+- Light also exhibits wave-particle duality
+- The wavelength associated with a moving particle is given by the de Broglie relation:
+  - $\lambda=\frac{h}{p}$
+- $p$ is momentum
+- Matter waves are most noticeable for very small particles such as electrons
 
 # The dilemma of the atom
 - Electrons outside the nucleus are attracted to the protons in the nucleus
-- Charged particles moving in curved paths lose energy
+- Charged particles moving in curved paths lose energy according to classical electromagnetic theory
 - This raises the question: What keeps the atom from collapsing?
+- The quantum mechanical model resolves this problem by describing electrons with stationary states rather than classical orbits
 
 # Quantum mechanical model of the atom
-- Mathematical laws can identify the regions outside of the nucleus where electrons are most likely to be found
+- Mathematical laws identify the regions outside of the nucleus where electrons are most likely to be found
+- The Schrödinger equation describes the allowed quantum states of electrons
+- The solutions to the Schrödinger equation are called wavefunctions
+- The square of the wavefunction is related to the probability of finding an electron in a particular region
 - These laws are beyond the scope of this class
-- The Schrödinger equation is not solved in this class
 
 # Heisenberg uncertainty principle
-- Cannot know exactly the position and the velocity of a particle at the same time
-- The act of measuring will change one or the other
-- You can find out where the electron is, but not where it is going
-- Or, you can find out where the electron is going, but not where it is
-- One cannot simultaneously determine both the position and momentum of an electron
+- Cannot know exactly the position and momentum of a particle at the same time
+- The uncertainty is fundamental and is not simply caused by imperfect instruments
+- One cannot simultaneously determine both the position and momentum of an electron with arbitrary precision
+- The uncertainty relation can be written as:
+  - $\Delta x\Delta p \geq \frac{\hbar}{2}$
 
 # Particle or wave?
 - Light is most commonly treated as a wave, but there are times when it behaves more like a particle (photon)
 - Similarly, electrons also exist in this dual state where they exhibit characteristics of both
-- This duality explains why classic Newtonian physics do not work at the quantum level
+- This duality explains why classical Newtonian physics do not fully describe matter and radiation at the quantum level
 
 # The wave-like electron
 - J.J. Thomson won the Nobel prize for describing the electron as a particle
 - His son, George Thomson won the Nobel prize for describing the wave-like nature of the electron
 - Louis de Broglie asked: If light waves behave as particles, then will particles behave like waves?
-- Since the electron propagates through space as an energy wave, to understand the atom, one must understand the behavior of electromagnetic waves
+- Since the electron has wave-like properties, to understand the atom, one must understand the behavior of electromagnetic waves
+- Electron diffraction experiments provide evidence for the wave nature of matter
 
 # Electromagnetic radiation
-- Electromagnetic radiation propagates through space as a wave moving at the speed of light
+- Electromagnetic radiation propagates through space as a wave moving at the speed of light in a vacuum
 - $c=\nu\lambda$
-- $c$ = speed of light, a constant ($3.00 \times 10^8\ \mathrm{m/s}$)
+- $c$ = speed of light in a vacuum, a constant ($3.00 \times 10^8\ \mathrm{m/s}$)
 - $\nu$ = frequency, in units of hertz (Hz, sec$^{-1}$)
 - $\lambda$ = wavelength, in meters
 - There is an inverse relation between $\nu$ and $\lambda$
 - Increasing frequency means decreasing wavelength
+- Electromagnetic radiation does not require a material medium to travel through space
+
+# Electromagnetic spectrum
+- The electromagnetic spectrum includes radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays
+- All electromagnetic radiation travels at the same speed in vacuum
+- Different regions have different frequencies, wavelengths, and energies
+- From lowest frequency to highest frequency:
+  - Radio
+  - Microwave
+  - Infrared
+  - Visible
+  - Ultraviolet
+  - X-ray
+  - Gamma ray
 
 # Energy of electromagnetic radiation
 - $E=h\nu$
@@ -192,6 +270,7 @@
 - $\nu$ = frequency, in units of hertz (Hz, sec$^{-1}$)
 - The energy ($E$) of electromagnetic radiation is directly proportional to the frequency ($\nu$) of the radiation
 - There is a direct relation between $\nu$ and $E$
+- For a photon, energy can also be written as $E=\frac{hc}{\lambda}$
 
 # What it means
 - Short wavelength = high frequency = high energy
@@ -199,33 +278,46 @@
 
 # One way of answering the dilemma of the atom
 - Treat electrons as waves
-- As the electron moves toward the nucleus, the wavelength shortens
-- Shorter wavelength = higher energy
-- Higher energy = greater distance from the nucleus
+- An electron has a wavelength related to its momentum by $\lambda=\frac{h}{p}$
+- Higher momentum corresponds to a shorter de Broglie wavelength
+- Electrons in atoms can occupy only certain allowed quantum states
+- These allowed states have specific energies, rather than the continuous range of energies predicted by classical physics
 
 # Classical mechanics and quantum mechanics
 - Classical mechanics describes the motion of macroscopic objects
 - Examples include projectiles, parts of machinery, and astronomical objects such as spacecraft, planets, stars, and galaxies
 - Copernicus, Newton, and Einstein are associated with classical mechanics
-- Quantum mechanics reconciles the macroscopic laws of physics with the atomic nature of matter
+- Quantum mechanics describes matter and radiation at atomic and subatomic scales
 - Quantum mechanics handles the wave-particle duality of atoms and molecules
 - Schrödinger, Heisenberg, and Pauli are associated with quantum mechanics
 
 # Quanta and electron transitions
 - Definite amounts of energy are quanta
-- Electron transitions involve jumps of definite amounts of energy
+- Electron transitions involve jumps between allowed energy states
+- When an electron moves to a higher energy state, it absorbs energy
+- When an electron moves to a lower energy state, it releases energy
 - Quanta of light are photons
+- The energy of an emitted or absorbed photon corresponds to the energy difference between the two states:
+  - $\Delta E=h\nu$
 
 # Emission spectra
-- Electron transitions produce bands of light with definite wavelengths
+- Electron transitions produce light with definite wavelengths
 - The lowest possible energy is the ground state
+- An electron in a higher-energy state is in an excited state
 - The Hydrogen emission spectrum produces a “bright line” spectrum
+- Each line corresponds to a specific energy difference between allowed states
 - Lyman: ultraviolet
 - Balmer: visible
 - Paschen: infrared
+- The Rydberg equation can be used to calculate the wavelengths of Hydrogen spectral lines:
+  - $\frac{1}{\lambda}=R_H\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)$
+  - $n_2>n_1$
+  - $R_H$ is the Rydberg constant
 
 # Flame tests
 - Many elements give off characteristic light which can be used to help identify them
+- Heat excites electrons to higher-energy states
+- When the electrons return to lower-energy states, photons are emitted
 - Elements shown include:
   - Strontium
   - Sodium
@@ -235,7 +327,8 @@
 
 # Absorption spectra
 - Absorption spectra exist too
+- When light passes through matter, specific wavelengths can be absorbed
 - Absorption spectroscopy can be used to identify and analyze substances
+- An absorption spectrum generally contains dark lines or bands at wavelengths corresponding to absorbed photons
 - An example is the direct detection and chemical analysis of the atmosphere of a planet outside our solar system
 - Sodium filters the alien star light of HD 209458 as the hot Jupiter-like planet passes in front
-
