@@ -8,6 +8,7 @@ import numpy as np
 
 OUT=Path("diagrams/electrons"); OUT.mkdir(parents=True,exist_ok=True)
 TEXT_COLOR="#888888"
+# Trigger regeneration after orbital-notation spacing correction.
 
 def figure(title):
     fig,ax=plt.subplots(figsize=(12,6.67)); fig.patch.set_alpha(0)
