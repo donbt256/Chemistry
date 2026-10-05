@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:05:38.007360</dc:date>
+    <dc:date>2026-10-05T17:06:18.889426</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -233,12 +233,12 @@ L 623.985837 216.249896
 L 629.062918 206.247492 
 L 634.14 195.9768 
 L 634.14 195.9768 
-" clip-path="url(#p4a435afead)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p426f600bb5)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 42.66 195.9768 
 L 634.14 195.9768 
-" clip-path="url(#p4a435afead)" style="fill: none; stroke: #777777; stroke-linecap: square"/>
+" clip-path="url(#p426f600bb5)" style="fill: none; stroke: #777777; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Electromagnetic wave -->
@@ -936,7 +936,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p4a435afead">
+  <clipPath id="p426f600bb5">
    <rect x="3.6" y="3.6" width="669.6" height="369.7848"/>
   </clipPath>
  </defs>
