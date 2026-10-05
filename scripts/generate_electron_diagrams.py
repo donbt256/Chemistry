@@ -7,9 +7,22 @@ FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 F=lambda n:ImageFont.truetype(FONT,n)
 B=lambda n:ImageFont.truetype(BOLD,n)
+class ContrastDraw:
+    """Pillow drawing wrapper that keeps dark text readable on light and dark themes."""
+    def __init__(self, draw):
+        self._draw = draw
+
+    def text(self, xy, text, *args, **kwargs):
+        kwargs.setdefault("stroke_width", 6)
+        kwargs.setdefault("stroke_fill", (248, 248, 248, 245))
+        return self._draw.text(xy, text, *args, **kwargs)
+
+    def __getattr__(self, name):
+        return getattr(self._draw, name)
+
 def base(t):
     im=Image.new("RGBA",(W,H),(0,0,0,0))
-    d=ImageDraw.Draw(im)
+    d=ContrastDraw(ImageDraw.Draw(im))
     d.text((70,45),t,font=B(52),fill=(20,25,35,255))
     return im,d
 def save(im,n): im.save(O/n,"PNG",optimize=True)
