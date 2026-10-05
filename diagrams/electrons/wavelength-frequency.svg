@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:02:36.403893</dc:date>
+    <dc:date>2026-10-05T17:05:38.039672</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -139,7 +139,7 @@ L 606.695021 142.949583
 L 614.837511 137.673062 
 L 622.98 132.2208 
 L 622.98 132.2208 
-" clip-path="url(#pb2df460bc2)" style="fill: none; stroke: #355f9e; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#p00fe766c68)" style="fill: none; stroke: #355f9e; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 53.82 262.5048 
@@ -485,11 +485,11 @@ L 618.094506 275.25657
 L 621.351502 266.875091 
 L 622.98 262.5048 
 L 622.98 262.5048 
-" clip-path="url(#pb2df460bc2)" style="fill: none; stroke: #355f9e; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#p00fe766c68)" style="fill: none; stroke: #355f9e; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Wavelength and frequency -->
-    <g style="fill: currentColor" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
+    <g style="fill: #888888" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
      <defs>
       <path id="DejaVuSans-Bold-3a" d="M 191 4666 
 L 1344 4666 
@@ -862,7 +862,7 @@ z
    </g>
    <g id="text_2">
     <!-- $\text{low frequency / long wavelength}$ -->
-    <g style="fill: currentColor" transform="translate(64.98 85.443394) scale(0.12 -0.12)">
+    <g style="fill: #888888" transform="translate(64.98 85.443394) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-4f" d="M 603 4863 
 L 1178 4863 
@@ -1237,7 +1237,7 @@ z
    </g>
    <g id="text_3">
     <!-- $\text{high frequency / short wavelength}$ -->
-    <g style="fill: currentColor" transform="translate(64.98 215.727394) scale(0.12 -0.12)">
+    <g style="fill: #888888" transform="translate(64.98 215.727394) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-4c" d="M 603 3500 
 L 1178 3500 
@@ -1321,7 +1321,7 @@ z
    </g>
    <g id="text_4">
     <!-- $c=\nu\lambda$ -->
-    <g style="fill: currentColor" transform="translate(307.635 348.350339) scale(0.21 -0.21)">
+    <g style="fill: #888888" transform="translate(307.635 348.350339) scale(0.21 -0.21)">
      <defs>
       <path id="DejaVuSans-Oblique-46" d="M 3431 3366 
 L 3316 2797 
@@ -1403,7 +1403,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pb2df460bc2">
+  <clipPath id="p00fe766c68">
    <rect x="3.6" y="3.6" width="669.6" height="369.7848"/>
   </clipPath>
  </defs>

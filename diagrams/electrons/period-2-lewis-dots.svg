@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:02:36.280580</dc:date>
+    <dc:date>2026-10-05T17:05:37.912322</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,7 +32,7 @@ z
   <g id="axes_1">
    <g id="text_1">
     <!-- Period 2 Lewis dot notation -->
-    <g style="fill: currentColor" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
+    <g style="fill: #888888" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
      <defs>
       <path id="DejaVuSans-Bold-33" d="M 588 4666 
 L 2584 4666 
@@ -344,7 +344,7 @@ z
    </g>
    <g id="text_2">
     <!-- $\mathrm{Li}$ -->
-    <g style="fill: currentColor" transform="translate(46.68 175.446808) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(46.68 175.446808) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-2f" d="M 628 4666 
 L 1259 4666 
@@ -375,7 +375,7 @@ z
    </g>
    <g id="text_3">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(50.355 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(50.355 157.121166) scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-ca3" d="M 1075 2006 
 Q 1075 2394 1345 2661 
@@ -394,7 +394,7 @@ z
    </g>
    <g id="text_4">
     <!-- $\mathrm{Be}$ -->
-    <g style="fill: currentColor" transform="translate(123.595 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(123.595 175.444816) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-25" d="M 1259 2228 
 L 1259 519 
@@ -460,43 +460,43 @@ z
    </g>
    <g id="text_5">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(131.265 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(131.265 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_6">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(148.13892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(148.13892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_7">
     <!-- $\mathrm{B}$ -->
-    <g style="fill: currentColor" transform="translate(209.775 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(209.775 175.444816) scale(0.17 -0.17)">
      <use xlink:href="#DejaVuSans-25" transform="translate(0 0.09375)"/>
     </g>
    </g>
    <g id="text_8">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(212.175 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(212.175 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_9">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(229.04892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(229.04892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_10">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(212.175 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(212.175 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_11">
     <!-- $\mathrm{C}$ -->
-    <g style="fill: currentColor" transform="translate(290.6 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(290.6 175.444816) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-26" d="M 4122 4306 
 L 4122 3641 
@@ -525,31 +525,31 @@ z
    </g>
    <g id="text_12">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(293.085 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(293.085 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_13">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(309.95892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(309.95892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_14">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(293.085 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(293.085 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_15">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(276.21108 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(276.21108 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_16">
     <!-- $\mathrm{N}$ -->
-    <g style="fill: currentColor" transform="translate(371.085 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(371.085 175.444816) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-31" d="M 628 4666 
 L 1478 4666 
@@ -570,37 +570,37 @@ z
    </g>
    <g id="text_17">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(373.995 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(373.995 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_18">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(390.86892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(390.86892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_19">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(373.995 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(373.995 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_20">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(357.12108 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(357.12108 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_21">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(390.86892 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(390.86892 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_22">
     <!-- $\mathrm{O}$ -->
-    <g style="fill: currentColor" transform="translate(451.655 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(451.655 175.444816) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-32" d="M 2522 4238 
 Q 1834 4238 1429 3725 
@@ -629,43 +629,43 @@ z
    </g>
    <g id="text_23">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(454.905 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(454.905 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_24">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(471.77892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(471.77892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_25">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(454.905 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(454.905 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_26">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(438.03108 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(438.03108 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_27">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(471.77892 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(471.77892 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_28">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(438.03108 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(438.03108 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_29">
     <!-- $\mathrm{F}$ -->
-    <g style="fill: currentColor" transform="translate(534.35 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(534.35 175.444816) scale(0.17 -0.17)">
      <defs>
       <path id="DejaVuSans-29" d="M 628 4666 
 L 3309 4666 
@@ -686,104 +686,104 @@ z
    </g>
    <g id="text_30">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(535.815 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(535.815 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_31">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(552.68892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(552.68892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_32">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(535.815 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(535.815 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_33">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(518.94108 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(518.94108 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_34">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(552.68892 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(552.68892 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_35">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(518.94108 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(518.94108 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_36">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(552.68892 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(552.68892 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_37">
     <!-- $\mathrm{Ne}$ -->
-    <g style="fill: currentColor" transform="translate(608.545 175.444816) scale(0.17 -0.17)">
+    <g style="fill: #888888" transform="translate(608.545 175.444816) scale(0.17 -0.17)">
      <use xlink:href="#DejaVuSans-31" transform="translate(0 0.09375)"/>
      <use xlink:href="#DejaVuSans-48" transform="translate(74.804688 0.09375)"/>
     </g>
    </g>
    <g id="text_38">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(616.725 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(616.725 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_39">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(633.59892 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(633.59892 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_40">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(616.725 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(616.725 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_41">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(599.85108 173.886222) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(599.85108 173.886222) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_42">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(633.59892 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(633.59892 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_43">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(599.85108 157.121166) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(599.85108 157.121166) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_44">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(633.59892 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(633.59892 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_45">
     <!-- $\bullet$ -->
-    <g style="fill: currentColor" transform="translate(599.85108 190.651278) scale(0.11 -0.11)">
+    <g style="fill: #888888" transform="translate(599.85108 190.651278) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-ca3" transform="translate(0 0.25)"/>
     </g>
    </g>
    <g id="text_46">
     <!-- $\text{Valence electrons increase from 1 to 8 across Period 2.}$ -->
-    <g style="fill: currentColor" transform="translate(159.78 321.323277) scale(0.13 -0.13)">
+    <g style="fill: #888888" transform="translate(159.78 321.323277) scale(0.13 -0.13)">
      <defs>
       <path id="DejaVuSans-39" d="M 1831 0 
 L 50 4666 

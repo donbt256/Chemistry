@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-05T17:02:35.544903</dc:date>
+    <dc:date>2026-10-05T17:05:37.197928</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,31 +41,31 @@ C 357.020327 343.028884 356.256 344.862228 356.256 346.7736
 C 356.256 348.684972 357.020327 350.518316 358.380647 351.86986 
 C 359.740968 353.221404 361.586217 353.9808 363.51 353.9808 
 z
-" clip-path="url(#p117574f694)" style="fill: #b73737; stroke: #b73737; stroke-linejoin: miter"/>
+" clip-path="url(#p8e8ab2b1de)" style="fill: #b73737; stroke: #b73737; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 137.52 317.9448 
 L 589.5 317.9448 
-" clip-path="url(#p117574f694)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p8e8ab2b1de)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 137.52 259.7328 
 L 589.5 259.7328 
-" clip-path="url(#p117574f694)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p8e8ab2b1de)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 137.52 201.5208 
 L 589.5 201.5208 
-" clip-path="url(#p117574f694)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p8e8ab2b1de)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 137.52 143.3088 
 L 589.5 143.3088 
-" clip-path="url(#p117574f694)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p8e8ab2b1de)" style="fill: none; stroke: #355f9e; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Electron energy levels -->
-    <g style="fill: currentColor" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
+    <g style="fill: #888888" transform="translate(17.55 32.600503) scale(0.22 -0.22)">
      <defs>
       <path id="DejaVuSans-Bold-28" d="M 588 4666 
 L 3834 4666 
@@ -336,7 +336,7 @@ z
    </g>
    <g id="text_2">
     <!-- $n=1$ -->
-    <g style="fill: currentColor" transform="translate(59.22 322.620581) scale(0.18 -0.18)">
+    <g style="fill: #888888" transform="translate(59.22 322.620581) scale(0.18 -0.18)">
      <defs>
       <path id="DejaVuSans-Oblique-51" d="M 3566 2113 
 L 3156 0 
@@ -396,7 +396,7 @@ z
    </g>
    <g id="text_3">
     <!-- $n=2$ -->
-    <g style="fill: currentColor" transform="translate(59.22 264.408581) scale(0.18 -0.18)">
+    <g style="fill: #888888" transform="translate(59.22 264.408581) scale(0.18 -0.18)">
      <defs>
       <path id="DejaVuSans-15" d="M 1228 531 
 L 3431 531 
@@ -430,7 +430,7 @@ z
    </g>
    <g id="text_4">
     <!-- $n=3$ -->
-    <g style="fill: currentColor" transform="translate(59.22 206.196581) scale(0.18 -0.18)">
+    <g style="fill: #888888" transform="translate(59.22 206.196581) scale(0.18 -0.18)">
      <defs>
       <path id="DejaVuSans-16" d="M 2597 2516 
 Q 3050 2419 3304 2112 
@@ -472,7 +472,7 @@ z
    </g>
    <g id="text_5">
     <!-- $n=4$ -->
-    <g style="fill: currentColor" transform="translate(59.22 147.984581) scale(0.18 -0.18)">
+    <g style="fill: #888888" transform="translate(59.22 147.984581) scale(0.18 -0.18)">
      <defs>
       <path id="DejaVuSans-17" d="M 2419 4116 
 L 825 1625 
@@ -501,7 +501,7 @@ z
    </g>
    <g id="text_6">
     <!-- $\mathrm{nucleus}$ -->
-    <g style="fill: currentColor" transform="translate(338.355 370.110477) scale(0.13 -0.13)">
+    <g style="fill: #888888" transform="translate(338.355 370.110477) scale(0.13 -0.13)">
      <defs>
       <path id="DejaVuSans-51" d="M 3513 2113 
 L 3513 0 
@@ -641,7 +641,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p117574f694">
+  <clipPath id="p8e8ab2b1de">
    <rect x="3.6" y="3.6" width="669.6" height="369.7848"/>
   </clipPath>
  </defs>
