@@ -771,16 +771,7 @@ function resolveImages(container, currentPath) {
     }
 
     const resolved = normalizePath(currentDirectory + src);
-
-    // Images are part of the GitHub Pages site, so load them from the
-    // same origin instead of raw.githubusercontent.com. This avoids
-    // cross-origin/network filtering and keeps image paths stable.
-    img.src = new URL(resolved, window.location.origin + "/").href;
-
-    img.addEventListener("error", () => {
-      // Fall back to the raw GitHub URL if the Pages copy is unavailable.
-      img.src = RAW_BASE + resolved;
-    }, { once: true });
+    img.src = RAW_BASE + resolved;
   });
 }
 
