@@ -430,3 +430,9 @@
 - An example is the direct detection and chemical analysis of the atmosphere of a planet outside our solar system
 - Sodium filters the alien star light of HD 209458 as the hot Jupiter-like planet passes in front
 - The slide illustrates starlight passing through a sodium-rich planetary atmosphere and then being analyzed with a spectrograph
+
+- hund
+
+- noble gas notation
+
+- madelung rule
