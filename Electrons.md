@@ -107,7 +107,7 @@
   - $5s \rightarrow n=5$, $\ell=0$; $n+\ell=5$
 - When 2 sub-shells have the same value for $n+\ell$, the one with the lower $n$ value comes first
 - The commonly used filling order is:
-  - $1s$
+  - $1s^$
   - $2s$
   - $2p$
   - $3s$
