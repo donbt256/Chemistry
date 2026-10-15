@@ -40,11 +40,11 @@
 -   **Madelung Rule (\(n + \ell\) Rule):** Determines relative sub-shell energy order.
     -   The azimuthal quantum number (\(\ell\)) values correspond to sub-shells: \(s \rightarrow \ell = 0\), \(p \rightarrow \ell = 1\), \(d \rightarrow \ell = 2\), and \(f \rightarrow \ell = 3\).
     -   Sub-shells fill in order of increasing \(n + \ell\); if two sub-shells share the same \(n + \ell\) sum, the one with the lower \(n\) value fills first.
--   **Configuration Notation:** Formatted as \(n\text{sub-shell}^{\text{electrons}}\) (e.g., Helium is \(1s^2\)).
+-   **Configuration Notation:** Formatted as \(n\text{sub-shell}^{\text{electrons}}\) (e.g., Helium is $(1s^2)$.
 -   **Steps for Configuration:**
     1.  Count total electrons using the atomic number.
-    2.  Start filling from the lowest energy level (\(1s\)) upward.
-    3.  Noble gas shorthand condenses inner shell configurations (e.g., Cobalt with \(27\) electrons is \([Ar]4s^2 3d^7\)).
+    2.  Start filling from the lowest energy level $(1s)$ upward.
+    3.  Noble gas shorthand condenses inner shell configurations (e.g., Cobalt with $27$ electrons is $([Ar]4s^2 3d^7))$.
     4.  This predicted filling pattern strictly works for the first \(23\) elements, as transition metals exhibit experimental conflicts with standard Aufbau rules under ambient conditions.
 -   **Electron Spin:** Describes the behavior of an electron within a magnetic field, taking values of \(+\frac{1}{2}\) or \(-\frac{1}{2}\). Spin direction is depicted in orbital diagrams using opposing arrows.
 
