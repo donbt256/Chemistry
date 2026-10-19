@@ -131,9 +131,9 @@ The prefixes describe atom counts in a molecule; they are not charges. Apply the
 - **Across a period:** electronegativity generally increases. The slides explain this in terms of increasing nuclear attraction and decreasing atomic radius.
 - **Down a group:** electronegativity generally decreases or may remain unchanged. Added electron shells place valence electrons farther from the nucleus, reducing the attraction they experience.
 - Across a period, electrons are added to subshell orbitals of similar energy while nuclear attraction increases, pulling electrons closer.
-- Down a group, additional shells increase the distance between the nucleus and the valence electrons. The slides relate the weaker attraction to the inverse-square relationship with distance.
+- Down a group, additional shells increase the distance between the nucleus and the valence electrons. The slides relate the weaker attraction to the inverse-square relationship with distance.\n\n![Conceptual diagram of how electrostatic attraction changes with distance](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/covalent/inverse-square-distance.svg)
 - **Atomic radius** is defined in the slides as half the distance between the nuclei in a covalently bonded diatomic molecule.
-- Atomic radius generally decreases across a period and increases down a group.
+- Atomic radius generally decreases across a period and increases down a group.\n\n![Schematic atomic-radius trends across a period and down a group](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/covalent/atomic-radius-trends.svg)\n\nThe slides also connect the effect of distance to an inverse-square relationship:
 
 ### Using electronegativity difference
 
