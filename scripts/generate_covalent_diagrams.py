@@ -167,36 +167,104 @@ b += '<circle cx="590" cy="165" r="38" fill="none" stroke="#2563eb" stroke-width
 b += text(590,270,"ring shorthand",17,700)
 save("benzene-resonance.svg", frame("Resonance in benzene, C₆H₆", b, height=310, subtitle="The ring shorthand represents delocalized inner electrons."))
 
-# VSEPR geometry gallery: clear schematic atom positions.
+# VSEPR geometry gallery: all major atom arrangements shown in the slide tables.
 b = ""
+import math
 def atom(x,y,label="",fill="#dbeafe"):
-    return circle(x,y,12,label,fill,BLUE,13)
+    return circle(x,y,10,label,fill,BLUE,12)
 def bond(x1,y1,x2,y2):
-    return line(x1,y1,x2,y2,3,"#94a3b8")
+    return line(x1,y1,x2,y2,2.5,"#94a3b8")
 def geometry(cx,cy,kind,title):
+    if kind == "linear":
+        pts=[(cx-43,cy),(cx+43,cy)]
+    elif kind == "trigonal planar":
+        pts=[(cx-35,cy+22),(cx+35,cy+22),(cx,cy-40)]
+    elif kind == "bent":
+        pts=[(cx-32,cy+23),(cx+32,cy+23)]
+    elif kind == "tetrahedral":
+        pts=[(cx-35,cy+20),(cx+35,cy+20),(cx-18,cy-35),(cx+18,cy-35)]
+    elif kind == "trigonal pyramidal":
+        pts=[(cx-35,cy+20),(cx+35,cy+20),(cx,cy-38)]
+    elif kind == "trigonal bipyramidal":
+        pts=[(cx-36,cy+15),(cx+36,cy+15),(cx,cy-25),(cx,cy-48),(cx,cy+48)]
+    elif kind == "seesaw":
+        pts=[(cx-40,cy),(cx+40,cy),(cx-15,cy-35),(cx+15,cy+35)]
+    elif kind == "T-shaped":
+        pts=[(cx,cy-43),(cx,cy+43),(cx+38,cy)]
+    elif kind == "octahedral":
+        pts=[(cx-42,cy),(cx+42,cy),(cx,cy-42),(cx,cy+42),(cx-28,cy-28),(cx+28,cy+28)]
+    elif kind == "square pyramidal":
+        pts=[(cx-28,cy-22),(cx+28,cy-22),(cx-28,cy+22),(cx+28,cy+22),(cx,cy-48)]
+    elif kind == "square planar":
+        pts=[(cx-30,cy-30),(cx+30,cy-30),(cx-30,cy+30),(cx+30,cy+30)]
+    elif kind in ("pentagonal bipyramidal","pentagonal pyramidal"):
+        pts=[]
+        radius=39
+        count=5
+        for i in range(count):
+            a=math.radians(72*i-90)
+            pts.append((cx+radius*math.cos(a),cy+radius*math.sin(a)))
+        if kind == "pentagonal bipyramidal":
+            pts.extend([(cx,cy-50),(cx,cy+50)])
+        else:
+            pts.append((cx,cy-50))
     s=""
-    pts={
-      "linear":[(cx-42,cy),(cx+42,cy)],
-      "trigonal planar":[(cx-36,cy+22),(cx+36,cy+22),(cx,cy-42)],
-      "bent":[(cx-34,cy+25),(cx+34,cy+25)],
-      "tetrahedral":[(cx-35,cy+22),(cx+35,cy+22),(cx-10,cy-38),(cx+10,cy-38)],
-      "trigonal pyramidal":[(cx-35,cy+22),(cx+35,cy+22),(cx,cy-38)],
-      "seesaw":[(cx-42,cy),(cx+42,cy),(cx,cy-42),(cx,cy+42)],
-      "T-shaped":[(cx,cy-42),(cx,cy),(cx,cy+42)],
-      "octahedral":[(cx-40,cy),(cx+40,cy),(cx,cy-40),(cx,cy+40),(cx-28,cy-28),(cx+28,cy+28)],
-      "square planar":[(cx-30,cy-30),(cx+30,cy-30),(cx-30,cy+30),(cx+30,cy+30)],
-      "pentagonal bipyramidal":[(cx,cy-40),(cx,cy+40),(cx-38,cy-12),(cx-24,cy+28),(cx+24,cy+28),(cx+38,cy-12),(cx,cy)]
-    }[kind]
-    for x,y in pts: s+=bond(cx,cy,x,y)
+    for x,y in pts:
+        s+=bond(cx,cy,x,y)
     s+=atom(cx,cy,"A","#bfdbfe")
-    for x,y in pts: s+=atom(x,y)
-    s+=text(cx,cy+73,title,15,700)
+    for x,y in pts:
+        s+=atom(x,y,"X")
+    s+=text(cx,cy+70,title,14,700)
     return s
-items=[(150,140,"linear","Linear"),(450,140,"trigonal planar","Trigonal planar"),(750,140,"bent","Bent"),
-       (150,315,"tetrahedral","Tetrahedral"),(450,315,"trigonal pyramidal","Trigonal pyramidal"),(750,315,"seesaw","Seesaw"),
-       (150,500,"T-shaped","T-shaped"),(450,500,"octahedral","Octahedral"),(750,500,"square planar","Square planar")]
-for cx,cy,k,t in items: b+=geometry(cx,cy,k,t)
-save("vsepr-geometries.svg", frame("VSEPR: common molecular geometries", b, width=900, height=590, subtitle="Schematic positions only; lone pairs are omitted from these simplified atom-only sketches."))
+items=[
+ (125,135,"linear","Linear"),
+ (375,135,"trigonal planar","Trigonal planar"),
+ (625,135,"bent","Bent"),
+ (875,135,"tetrahedral","Tetrahedral"),
+ (125,315,"trigonal pyramidal","Trigonal pyramidal"),
+ (375,315,"trigonal bipyramidal","Trigonal bipyramidal"),
+ (625,315,"seesaw","Seesaw"),
+ (875,315,"T-shaped","T-shaped"),
+ (125,495,"octahedral","Octahedral"),
+ (375,495,"square pyramidal","Square pyramidal"),
+ (625,495,"square planar","Square planar"),
+ (875,495,"pentagonal bipyramidal","Pentagonal bipyramidal"),
+ (500,655,"pentagonal pyramidal","Pentagonal pyramidal")
+]
+for cx,cy,k,t in items:
+    b+=geometry(cx,cy,k,t)
+save("vsepr-geometries.svg", frame("VSEPR: molecular geometries in the slide tables", b, width=1000, height=750, subtitle="Simplified atom-only sketches; lone pairs and perspective depth are omitted."))
+
+# Atomic-radius trends: smaller across a period, larger down a group.
+b = text(450,100,"Across a period",20,700)
+for i,r in enumerate([31,27,23,19,15]):
+    x=280+i*78
+    b+=circle(x,160,r,"", "#dbeafe", BLUE)
+b+=line(245,215,650,215,3,GREEN)+f'<polygon points="650,215 634,207 634,223" fill="{GREEN}"/>'
+b+=text(450,245,"Atomic radius generally decreases →",16,700,GREEN)
+b+=text(450,310,"Down a group",20,700)
+for i,r in enumerate([16,22,28,34]):
+    y=355+i*55
+    b+=circle(355,y,r,"", "#dbeafe", BLUE)
+b+=line(430,345,430,540,3,PURPLE)+f'<polygon points="430,540 422,524 438,524" fill="{PURPLE}"/>'
+b+=text(570,440,"Atomic radius generally",16,700,PURPLE)+text(570,465,"increases ↓",16,700,PURPLE)
+save("atomic-radius-trends.svg", frame("Atomic radius: periodic trends", b, height=590, subtitle="Schematic trend diagrams, not measured atom sizes."))
+
+# Inverse-square idea: increasing distance weakens attraction.
+b = circle(220,180,34,"+","#fee2e2",RED,28)
+b+=text(220,235,"nucleus",16,700)
+b+=circle(350,180,13,"−","#dbeafe",BLUE,16)
+b+=line(260,180,330,180,3,INK)
+b+=text(295,155,"r",18,700)
+b+=text(470,180,"Closer electron",18,700)
+b+=text(470,210,"stronger attraction",16,400,GREEN)
+b+=circle(650,180,34,"+","#fee2e2",RED,28)
+b+=circle(805,180,13,"−","#dbeafe",BLUE,16)
+b+=line(690,180,785,180,3,INK)
+b+=text(738,155,"2r",18,700)
+b+=text(730,235,"Twice the distance",18,700)
+b+=text(730,262,"one-quarter the force",16,400,RED)
+save("inverse-square-distance.svg", frame("Distance and electrostatic attraction", b, height=320, subtitle="The inverse-square relationship is F ∝ 1/r²; the sketch is conceptual."))
 
 # CO2: polar bonds cancel because the molecule is linear.
 b = text(240,150,"O",34,700,BLUE)+text(450,150,"C",34,700)+text(660,150,"O",34,700,BLUE)
