@@ -155,7 +155,7 @@ def hexagon(cx,cy,r,offset=0):
     s=""
     for i in range(6):
         x1,y1=pts[i]; x2,y2=pts[(i+1)%6]
-        s += line(round(x1,1),round(y1,1),round(x2,y2),round(y2,1),3,INK)
+        s += line(round(x1,1),round(y1,1),round(x2,1),round(y2,1),3,INK)
         if i%2==0:
             mx=(x1+x2)/2; my=(y1+y2)/2
             s += line(round(cx+(mx-cx)*.72),round(cy+(my-cy)*.72),round(cx+(mx-cx)*.9),round(cy+(my-cy)*.9),2.5,BLUE)
