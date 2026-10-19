@@ -184,7 +184,7 @@ In the ammonium illustration, hydrogen is introduced as an ion and nitrogen supp
 - The different drawings represent alternative electron arrangements for the same molecular framework; they are not separate molecules rapidly switching back and forth.
 - The slides describe the actual structure as an **average of its resonance structures**.
 - **Ozone, O₃,** is an example of resonance in the slides.
-- In **benzene, C₆H₆,** the inner electrons are represented as a ring.
+- In **benzene, C₆H₆,** the inner electrons are represented as a ring.\n\n![Simplified benzene resonance drawings and ring shorthand](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/covalent/benzene-resonance.svg)
 
 Resonance is useful when a single Lewis structure does not fully represent the electron arrangement described for a molecule. Keep the molecular identity the same when comparing its resonance structures.
 
@@ -193,7 +193,7 @@ Resonance is useful when a single Lewis structure does not fully represent the e
 - **VSEPR** stands for **Valence Shell Electron Pair Repulsion**.
 - The model predicts the arrangement around a central atom by placing electron pairs as far apart as possible, minimizing repulsions between them.
 - Geometry depends on both the number of electron domains around the central atom and how many of those domains are lone pairs.
-- Molecular models simplify three-dimensional structures. As the slides emphasize, understand what a model represents as well as its assumptions and limitations.
+- Molecular models simplify three-dimensional structures. As the slides emphasize, understand what a model represents as well as its assumptions and limitations.\n\n![Simplified VSEPR molecular geometry gallery](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/covalent/vsepr-geometries.svg)
 
 ### Predicting molecular geometry
 
