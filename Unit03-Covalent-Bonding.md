@@ -139,9 +139,9 @@ The prefixes describe atom counts in a molecule; they are not charges. Apply the
 
 Calculate the absolute difference between the two atoms' electronegativities:
 
-\[
+$[
 \Delta EN = |EN_1 - EN_2|
-\]
+]$
 
 The slides give these guidelines for predicting the predominant bond type:
 
