@@ -23,7 +23,7 @@ The octet rule is a useful guide for drawing introductory Lewis structures, but 
 ## Lewis Structures
 
 ![Lewis dot notation](https://raw.githubusercontent.com/donbt256/Chemistry/main/diagrams/electrons/lewis-dot-notation.svg)
-
+FIX THIS
 - **Lewis structures** represent valence electrons and show how those electrons are arranged around the atoms in a molecule.
 - Dots represent valence electrons. A pair of electrons shared between two atoms represents a covalent bond.
 - A shared pair can be drawn as two dots (`:`) or as a line (`—`). One line therefore represents one shared pair, or two bonding electrons.
